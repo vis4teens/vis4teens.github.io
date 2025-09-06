@@ -74,7 +74,7 @@ export default {
 .brand-link {
   text-decoration: none;
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   font-family: 'Calibri', Arial, serif;
   transition: color 0.3s ease;
@@ -181,7 +181,7 @@ export default {
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: #52B676;
+    background-color: #F4C027;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     gap: 0.5rem;
@@ -211,7 +211,7 @@ export default {
   }
 
   .brand-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .nav-image {

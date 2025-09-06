@@ -1234,7 +1234,7 @@
       "understanding/acquisition of knowledge"
     ],
     "Other tested variables": [
-      "visualspatial ability"
+      "visual-spatial ability"
     ],
     "Visualization types": {
       "statistical chart": [],
@@ -1759,7 +1759,7 @@
       "interest/motivation"
     ],
     "Other tested variables": [
-      "highachieving/lowachieving"
+      "high-achieving/low-achieving"
     ],
     "Visualization types": {
       "statistical chart": [],
@@ -2158,7 +2158,9 @@
       "knowledge transfer"
     ],
     "Other tested variables": [
-      "cognitivesciencebased intervention\ncurricula\nunderrepresented minority status of the classrooms"
+      "cognitive-science-based intervention",
+      "curricula",
+      "underrepresented minority status of the classrooms"
     ],
     "Visualization types": {
       "statistical chart": [],
@@ -2354,7 +2356,8 @@
       "usability/usefulness"
     ],
     "Other tested variables": [
-      "gender\nschool (technical/nontechnical)"
+      "gender",
+      "school (technical/non-technical)"
     ],
     "Visualization types": {
       "statistical chart": [],
@@ -2678,10 +2681,9 @@
       "understanding/acquisition of knowledge"
     ],
     "Other tested variables": [
-      "metacognitive scaffolding strategy\nprior knowledge\nprompting application  whether actually apply the prompts\n*不显著的：interest",
-      "selfconcept",
-      "cognitive load",
-      "learning strategies"
+      "metacognitive scaffolding strategy",
+      "prior knowledge",
+      "prompting application - whether actually apply the prompts"
     ],
     "Visualization types": {
       "statistical chart": [
@@ -5521,7 +5523,7 @@
       "usability/usefulness"
     ],
     "Other tested variables": [
-      "*smartphone/tablet (qual)"
+      
     ],
     "Visualization types": {
       "statistical chart": [],
@@ -5767,7 +5769,7 @@
       "memory"
     ],
     "Other tested variables": [
-      "*gender()"
+      
     ],
     "Visualization types": {
       "statistical chart": [],

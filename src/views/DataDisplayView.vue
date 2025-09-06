@@ -1127,7 +1127,7 @@ export default {
 .filter-panel h2 {
   margin-bottom: 20px;
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .search-section {
@@ -1137,7 +1137,7 @@ export default {
 .search-section h3 {
   margin-bottom: 10px;
   color: #555;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .search-input {
@@ -1145,13 +1145,13 @@ export default {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .filter-section h3 {
   margin-bottom: 15px;
   color: #555;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .filter-group {
@@ -1179,13 +1179,13 @@ export default {
 .filter-header label {
   font-weight: 600;
   color: #333;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
   margin: 0;
 }
 
 .toggle-icon {
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
   transition: transform 0.3s ease;
 }
@@ -1206,7 +1206,7 @@ export default {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 15px;
   width:20px;
 }
 
@@ -1226,7 +1226,7 @@ export default {
   color: white;
   padding: 4px 8px;
   border-radius: 16px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   gap: 4px;
 }
@@ -1235,7 +1235,7 @@ export default {
   background: none;
   border: none;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
   padding: 0;
   width: 16px;
@@ -1283,7 +1283,7 @@ export default {
 
 .category-title {
   color: #495057;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   margin: 0 0 8px 0;
   padding: 4px 8px;
@@ -1301,7 +1301,7 @@ export default {
   align-items: center;
   margin-bottom: 6px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   color: #555;
 }
 
@@ -1334,7 +1334,7 @@ export default {
 .filter-section-divider h3 {
   margin: 0;
   color: #8456A1;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -1357,7 +1357,7 @@ export default {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   transition: all 0.3s;
   text-transform: uppercase;
@@ -1377,7 +1377,7 @@ export default {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   transition: all 0.3s;
 }
@@ -1402,12 +1402,12 @@ export default {
 
 .display-header h2 {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .results-info {
   color: #666;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -1449,7 +1449,7 @@ export default {
   flex: 1;
   margin: 0;
   color: #333;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.4;
   font-weight: 600;
   display: -webkit-box;
@@ -1460,7 +1460,7 @@ export default {
 }
 
 .external-link-icon {
-  font-size: 16px;
+  font-size: 17px;
   text-decoration: none;
   color: #8456A1;
   padding: 4px;
@@ -1488,7 +1488,7 @@ export default {
   color: white;
   padding: 4px 10px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
 }
 
@@ -1497,7 +1497,7 @@ export default {
   color: #495057;
   padding: 4px 10px;
   border-radius: 20px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   border: 1px solid #e9ecef;
   max-width: 150px;
@@ -1511,7 +1511,7 @@ export default {
   color: white;
   padding: 4px 10px;
   border-radius: 20px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -1522,9 +1522,9 @@ export default {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 9px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
@@ -1566,13 +1566,13 @@ export default {
 .sidebar-header h3 {
   margin: 0;
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .close-button {
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 25px;
   cursor: pointer;
   color: #666;
   padding: 5px;
@@ -1602,7 +1602,7 @@ export default {
 .detail-section h4 {
   color: #333;
   margin-bottom: 15px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border-left: 4px solid #8456A1;
   padding-left: 10px;
@@ -1617,14 +1617,14 @@ export default {
   font-weight: 600;
   color: #555;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .detail-item p {
   margin: 0;
   color: #333;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .detail-item a {
@@ -1648,14 +1648,14 @@ export default {
   color: #495057;
   padding: 4px 8px;
   border-radius: 16px;
-  font-size: 12px;
+  font-size: 13px;
   border: 1px solid #e9ecef;
   font-weight: 500;
 }
 
 .visualization-types h5 {
   color: #666;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 8px;
   margin-top: 12px;
   font-weight: 600;
@@ -1730,7 +1730,7 @@ export default {
 
 @media (max-width: 480px) {
   .project-title {
-    font-size: 14px;
+    font-size: 15px;
   }
   
   .project-meta {
