@@ -76,7 +76,7 @@ export default {
   color: #333;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Calibri', Arial, serif;
   transition: color 0.3s ease;
 }
 
@@ -128,7 +128,7 @@ export default {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: all 0.3s ease;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Calibri', Arial, serif;
 }
 
 /* .nav-link:hover {

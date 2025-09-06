@@ -101,28 +101,9 @@
           </div>
         </div>
 
-        <!-- Education goals filter -->
-        <div class="filter-group">
-          <div class="filter-header" @click="toggleSection('educationGoals')">
-            <label>Education goals ({{ selectedEducationGoals.length }})</label>
-            <span class="toggle-icon" :class="{ 'expanded': expandedSections.educationGoals }">▼</span>
-          </div>
-          <div class="selected-tags" v-if="selectedEducationGoals.length > 0">
-            <span v-for="goal in selectedEducationGoals" :key="goal" class="selected-tag">
-              {{ goal }}
-              <button @click="removeFilter('selectedEducationGoals', goal)" class="remove-tag">×</button>
-            </span>
-          </div>
-          <div class="checkbox-group" v-show="expandedSections.educationGoals">
-            <label v-for="goal in educationGoals" :key="goal" class="checkbox-label">
-              <input 
-                type="checkbox" 
-                :value="goal" 
-                v-model="selectedEducationGoals"
-              />
-              <span class="checkbox-text">{{ goal }}</span>
-            </label>
-          </div>
+        <!-- ===== VISUALIZATION APPLICATION ===== -->
+        <div class="filter-section-divider">
+          <h3>Visualization Application</h3>
         </div>
 
         <!-- Visualization types filter (sub-categories) -->
@@ -154,7 +135,6 @@
           </div>
         </div>
 
-        
         <!-- Visualization forms filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('visualizationForms')">
@@ -179,8 +159,6 @@
           </div>
         </div>
 
-        
-
         <!-- Tool types filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('toolTypes')">
@@ -203,6 +181,35 @@
               <span class="checkbox-text">{{ type }}</span>
             </label>
           </div>
+        </div>
+
+        <!-- Education goals filter -->
+        <div class="filter-group">
+          <div class="filter-header" @click="toggleSection('educationGoals')">
+            <label>Education goals ({{ selectedEducationGoals.length }})</label>
+            <span class="toggle-icon" :class="{ 'expanded': expandedSections.educationGoals }">▼</span>
+          </div>
+          <div class="selected-tags" v-if="selectedEducationGoals.length > 0">
+            <span v-for="goal in selectedEducationGoals" :key="goal" class="selected-tag">
+              {{ goal }}
+              <button @click="removeFilter('selectedEducationGoals', goal)" class="remove-tag">×</button>
+            </span>
+          </div>
+          <div class="checkbox-group" v-show="expandedSections.educationGoals">
+            <label v-for="goal in educationGoals" :key="goal" class="checkbox-label">
+              <input 
+                type="checkbox" 
+                :value="goal" 
+                v-model="selectedEducationGoals"
+              />
+              <span class="checkbox-text">{{ goal }}</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- ===== PEDAGOGY ===== -->
+        <div class="filter-section-divider">
+          <h3>Pedagogy</h3>
         </div>
 
         <!-- Teaching environment filter -->
@@ -301,6 +308,40 @@
           </div>
         </div>
 
+        <!-- Theoretical underpinnings filter (sub-categories) -->
+        <div class="filter-group">
+          <div class="filter-header" @click="toggleSection('theoreticalUnderpinnings')">
+            <label>Theoretical underpinnings ({{ selectedTheoreticalUnderpinnings.length }})</label>
+            <span class="toggle-icon" :class="{ 'expanded': expandedSections.theoreticalUnderpinnings }">▼</span>
+          </div>
+          <div class="selected-tags" v-if="selectedTheoreticalUnderpinnings.length > 0">
+            <span v-for="theory in selectedTheoreticalUnderpinnings" :key="theory" class="selected-tag">
+              {{ theory }}
+              <button @click="removeFilter('selectedTheoreticalUnderpinnings', theory)" class="remove-tag">×</button>
+            </span>
+          </div>
+          <div class="nested-checkbox-group" v-show="expandedSections.theoreticalUnderpinnings">
+            <div v-for="(theories, category) in theoreticalUnderpinningsCategories" :key="category" class="nested-category">
+              <h5 class="category-title">{{ category }}</h5>
+              <div class="checkbox-subgroup">
+                <label v-for="theory in theories" :key="theory" class="checkbox-label">
+                  <input 
+                    type="checkbox" 
+                    :value="theory" 
+                    v-model="selectedTheoreticalUnderpinnings"
+                  />
+                  <span class="checkbox-text">{{ theory }}</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== EFFECTS ===== -->
+        <div class="filter-section-divider">
+          <h3>Effects</h3>
+        </div>
+
         <!-- Evaluation metrics filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('evaluationMetrics')">
@@ -346,37 +387,6 @@
               />
               <span class="checkbox-text">{{ variable }}</span>
             </label>
-          </div>
-        </div>
-
-        
-
-        <!-- Theoretical underpinnings filter (sub-categories) -->
-        <div class="filter-group">
-          <div class="filter-header" @click="toggleSection('theoreticalUnderpinnings')">
-            <label>Theoretical underpinnings ({{ selectedTheoreticalUnderpinnings.length }})</label>
-            <span class="toggle-icon" :class="{ 'expanded': expandedSections.theoreticalUnderpinnings }">▼</span>
-          </div>
-          <div class="selected-tags" v-if="selectedTheoreticalUnderpinnings.length > 0">
-            <span v-for="theory in selectedTheoreticalUnderpinnings" :key="theory" class="selected-tag">
-              {{ theory }}
-              <button @click="removeFilter('selectedTheoreticalUnderpinnings', theory)" class="remove-tag">×</button>
-            </span>
-          </div>
-          <div class="nested-checkbox-group" v-show="expandedSections.theoreticalUnderpinnings">
-            <div v-for="(theories, category) in theoreticalUnderpinningsCategories" :key="category" class="nested-category">
-              <h5 class="category-title">{{ category }}</h5>
-              <div class="checkbox-subgroup">
-                <label v-for="theory in theories" :key="theory" class="checkbox-label">
-                  <input 
-                    type="checkbox" 
-                    :value="theory" 
-                    v-model="selectedTheoreticalUnderpinnings"
-                  />
-                  <span class="checkbox-text">{{ theory }}</span>
-                </label>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -468,6 +478,14 @@
             <label>Publication Type:</label>
             <p>{{ selectedProject['Publication type'] }}</p>
           </div>
+          <div class="detail-item">
+            <label>Research Areas:</label>
+            <div class="tags-container">
+              <span v-for="area in selectedProject['Research areas']" :key="area" class="detail-tag">
+                {{ area }}
+              </span>
+            </div>
+          </div>
           <div class="detail-item" v-if="selectedProject.Link">
             <label>Link:</label>
             <a :href="selectedProject.Link" target="_blank" rel="noopener noreferrer">
@@ -479,14 +497,7 @@
         <!-- Research Information -->
         <div class="detail-section">
           <h4>Research Information</h4>
-          <div class="detail-item">
-            <label>Research Areas:</label>
-            <div class="tags-container">
-              <span v-for="area in selectedProject['Research areas']" :key="area" class="detail-tag">
-                {{ area }}
-              </span>
-            </div>
-          </div>
+          
           <div class="detail-item">
             <label>Subjects:</label>
             <div class="tags-container">
@@ -505,9 +516,38 @@
           </div>
         </div>
 
-        <!-- Education Information -->
+        <!-- Visualization Application -->
         <div class="detail-section">
-          <h4>Education Information</h4>
+          <h4>Visualization Application</h4>
+          <div class="detail-item">
+            <label>Visualization Types:</label>
+            <div class="visualization-types">
+              <div v-for="(types, category) in selectedProject['Visualization types']" :key="category">
+                <h5>{{ category }}:</h5>
+                <div class="tags-container">
+                  <span v-for="type in types" :key="type" class="detail-tag">
+                    {{ type }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <label>Visualization Forms:</label>
+            <div class="tags-container">
+              <span v-for="form in selectedProject['Visualization forms']" :key="form" class="detail-tag">
+                {{ form }}
+              </span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <label>Tool Types:</label>
+            <div class="tags-container">
+              <span v-for="tool in selectedProject['Tool types']" :key="tool" class="detail-tag">
+                {{ tool }}
+              </span>
+            </div>
+          </div>
           <div class="detail-item">
             <label>Education Goals:</label>
             <div class="tags-container">
@@ -516,6 +556,11 @@
               </span>
             </div>
           </div>
+        </div>
+
+        <!-- Pedagogy -->
+        <div class="detail-section">
+          <h4>Pedagogy</h4>
           <div class="detail-item">
             <label>Teaching Environment:</label>
             <div class="tags-container">
@@ -540,66 +585,11 @@
               </span>
             </div>
           </div>
-        </div>
-
-        <!-- Visualization Information -->
-        <div class="detail-section">
-          <h4>Visualization Information</h4>
-          <div class="detail-item">
-            <label>Visualization Forms:</label>
-            <div class="tags-container">
-              <span v-for="form in selectedProject['Visualization forms']" :key="form" class="detail-tag">
-                {{ form }}
-              </span>
-            </div>
-          </div>
-          <div class="detail-item">
-            <label>Tool Types:</label>
-            <div class="tags-container">
-              <span v-for="tool in selectedProject['Tool types']" :key="tool" class="detail-tag">
-                {{ tool }}
-              </span>
-            </div>
-          </div>
-          <div class="detail-item">
-            <label>Visualization Types:</label>
-            <div class="visualization-types">
-              <div v-for="(types, category) in selectedProject['Visualization types']" :key="category">
-                <h5>{{ category }}:</h5>
-                <div class="tags-container">
-                  <span v-for="type in types" :key="type" class="detail-tag">
-                    {{ type }}
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Evaluation Information -->
-        <div class="detail-section">
-          <h4>Evaluation Information</h4>
           <div class="detail-item">
             <label>Collaboration:</label>
             <div class="tags-container">
               <span v-for="collab in selectedProject.Collaboration" :key="collab" class="detail-tag">
                 {{ collab }}
-              </span>
-            </div>
-          </div>
-          <div class="detail-item">
-            <label>Evaluation Metrics:</label>
-            <div class="tags-container">
-              <span v-for="metric in selectedProject['Evaluation metrics']" :key="metric" class="detail-tag">
-                {{ metric }}
-              </span>
-            </div>
-          </div>
-          <div class="detail-item" v-if="selectedProject['Other tested variables'] && selectedProject['Other tested variables'].length > 0">
-            <label>Other Tested Variables:</label>
-            <div class="tags-container">
-              <span v-for="variable in selectedProject['Other tested variables']" :key="variable" class="detail-tag">
-                {{ variable }}
               </span>
             </div>
           </div>
@@ -614,6 +604,27 @@
                   </span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Effects -->
+        <div class="detail-section">
+          <h4>Effects</h4>
+          <div class="detail-item">
+            <label>Evaluation Metrics:</label>
+            <div class="tags-container">
+              <span v-for="metric in selectedProject['Evaluation metrics']" :key="metric" class="detail-tag">
+                {{ metric }}
+              </span>
+            </div>
+          </div>
+          <div class="detail-item" v-if="selectedProject['Other tested variables'] && selectedProject['Other tested variables'].length > 0">
+            <label>Other Tested Variables:</label>
+            <div class="tags-container">
+              <span v-for="variable in selectedProject['Other tested variables']" :key="variable" class="detail-tag">
+                {{ variable }}
+              </span>
             </div>
           </div>
         </div>
@@ -1307,6 +1318,28 @@ export default {
   background-color: #f0f0f0;
   padding: 2px 4px;
   border-radius: 3px;
+}
+
+/* 筛选区域分隔符 */
+.filter-section-divider {
+  margin: 30px 0 20px 0;
+  padding: 15px 0 10px 0;
+  border-top: 2px solid #8456A1;
+  border-bottom: 1px solid #e0e0e0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  position: relative;
+}
+
+.filter-section-divider h3 {
+  margin: 0;
+  color: #8456A1;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* 筛选操作按钮 */

@@ -11,7 +11,7 @@ const routes = [
     name: 'data-display',
     component: () => import('../views/DataDisplayView.vue'),
     meta: {
-      title: 'VIS4Teens - 数据展示'
+      title: 'VIS4Teens - DataDisplay'
     }
   },
   {
@@ -19,7 +19,7 @@ const routes = [
     name: 'correlation-matrix',
     component: () => import('../views/CorrelationMatrixView.vue'),
     meta: {
-      title: 'VIS4Teens - 相关性矩阵'
+      title: 'VIS4Teens - CorrelationMatrix'
     }
   },
   {
@@ -27,7 +27,7 @@ const routes = [
     name: 'sankey-diagram',
     component: () => import('../views/SankeyDiagramView.vue'),
     meta: {
-      title: 'VIS4Teens - 桑基图'
+      title: 'VIS4Teens - SankeyDiagramView'
     }
   }
 ]
