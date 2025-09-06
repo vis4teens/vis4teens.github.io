@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="nav-brand">
       <!-- <router-link to="/" class="brand-link">VIS4Teens</router-link> -->
-      <p class="brand-link">VIS4Teens</p>
+      <p class="brand-link">Data Visualization for Teenage Teaching</p>
       <button class="menu-toggle" @click="toggleMenu" :class="{ 'is-active': isMenuOpen }">
         <span></span>
         <span></span>

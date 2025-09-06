@@ -253,7 +253,7 @@ export default {
       },
       // Fixed category options
       categories: [
-        'Research areas',
+        // 'Research areas',
         'Subjects', 
         'Country',
         'Education goals',
@@ -317,15 +317,6 @@ export default {
       // If X-axis is the category that needs secondary header, then secondary header displays on Y-axis (rows), need to group rows
       const items = isXAxis ? this.currentMatrix.columns : this.currentMatrix.index;
       const totalItems = items.length;
-      
-      console.log('X-axis category:', this.currentMatrix.x_category);
-      console.log('Y-axis category:', this.currentMatrix.y_category);
-      console.log('Axis needing secondary header:', isXAxis ? 'X-axis (Columns)' : 'Y-axis (Rows)');
-      console.log('X-axis column count:', this.currentMatrix.columns.length);
-      console.log('Y-axis row count:', this.currentMatrix.index.length);
-      console.log('Total items:', totalItems);
-      console.log('Column groups:', columnGroups);
-      console.log('isSecondaryHeaderOnXAxis:', this.isSecondaryHeaderOnXAxis);
       
       const headerGroups = [];
       

@@ -32,7 +32,8 @@
         <!-- Research areas filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('researchAreas')">
-            <label>Research areas ({{ selectedResearchAreas.length }})</label>
+            <label>Research areas</label>
+            <!-- <label>Research areas ({{ selectedResearchAreas.length }})</label> -->
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.researchAreas }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedResearchAreas.length > 0">
@@ -56,7 +57,7 @@
         <!-- Subjects filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('subjects')">
-            <label>Subjects ({{ selectedSubjects.length }})</label>
+            <label>Subjects</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.subjects }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedSubjects.length > 0">
@@ -80,7 +81,7 @@
         <!-- Country filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('countries')">
-            <label>Country ({{ selectedCountries.length }})</label>
+            <label>Country</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.countries }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedCountries.length > 0">
@@ -109,7 +110,7 @@
         <!-- Visualization types filter (sub-categories) -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('visualizationTypes')">
-            <label>Visualization types ({{ selectedVisualizationTypes.length }})</label>
+            <label>Visualization types</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.visualizationTypes }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedVisualizationTypes.length > 0">
@@ -138,7 +139,7 @@
         <!-- Visualization forms filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('visualizationForms')">
-            <label>Visualization forms ({{ selectedVisualizationForms.length }})</label>
+            <label>Visualization forms</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.visualizationForms }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedVisualizationForms.length > 0">
@@ -162,7 +163,7 @@
         <!-- Tool types filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('toolTypes')">
-            <label>Tool types ({{ selectedToolTypes.length }})</label>
+            <label>Tool types</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.toolTypes }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedToolTypes.length > 0">
@@ -186,7 +187,7 @@
         <!-- Education goals filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('educationGoals')">
-            <label>Education goals ({{ selectedEducationGoals.length }})</label>
+            <label>Education goals</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.educationGoals }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedEducationGoals.length > 0">
@@ -215,7 +216,7 @@
         <!-- Teaching environment filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('teachingEnvironments')">
-            <label>Teaching environment ({{ selectedTeachingEnvironments.length }})</label>
+            <label>Teaching environment</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.teachingEnvironments }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedTeachingEnvironments.length > 0">
@@ -239,7 +240,7 @@
         <!-- Teaching mode filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('teachingModes')">
-            <label>Teaching mode ({{ selectedTeachingModes.length }})</label>
+            <label>Teaching mode</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.teachingModes }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedTeachingModes.length > 0">
@@ -263,7 +264,7 @@
         <!-- Non-lecturing activities filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('nonLecturingActivities')">
-            <label>Non-lecturing activities ({{ selectedNonLecturingActivities.length }})</label>
+            <label>Non-lecturing activities</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.nonLecturingActivities }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedNonLecturingActivities.length > 0">
@@ -287,7 +288,7 @@
         <!-- Collaboration filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('collaboration')">
-            <label>Collaboration ({{ selectedCollaboration.length }})</label>
+            <label>Collaboration</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.collaboration }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedCollaboration.length > 0">
@@ -311,7 +312,7 @@
         <!-- Theoretical underpinnings filter (sub-categories) -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('theoreticalUnderpinnings')">
-            <label>Theoretical underpinnings ({{ selectedTheoreticalUnderpinnings.length }})</label>
+            <label>Theoretical underpinnings</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.theoreticalUnderpinnings }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedTheoreticalUnderpinnings.length > 0">
@@ -345,7 +346,7 @@
         <!-- Evaluation metrics filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('evaluationMetrics')">
-            <label>Evaluation metrics ({{ selectedEvaluationMetrics.length }})</label>
+            <label>Evaluation metrics</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.evaluationMetrics }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedEvaluationMetrics.length > 0">
@@ -369,7 +370,7 @@
         <!-- Other tested variables filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('otherTestedVariables')">
-            <label>Other tested variables ({{ selectedOtherTestedVariables.length }})</label>
+            <label>Other tested variables</label>
             <span class="toggle-icon" :class="{ 'expanded': expandedSections.otherTestedVariables }">▼</span>
           </div>
           <div class="selected-tags" v-if="selectedOtherTestedVariables.length > 0">
@@ -400,7 +401,7 @@
     <!-- Right project display area -->
     <div class="display-panel">
       <div class="display-header">
-        <h2>Project List</h2>
+        <h2>Paper list</h2>
         <div class="results-info">
           Found {{ filteredProjects.length }} projects
         </div>
@@ -478,7 +479,7 @@
             <label>Publication Type:</label>
             <p>{{ selectedProject['Publication type'] }}</p>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Research areas'] && selectedProject['Research areas'].length > 0">
             <label>Research Areas:</label>
             <div class="tags-container">
               <span v-for="area in selectedProject['Research areas']" :key="area" class="detail-tag">
@@ -494,11 +495,11 @@
           </div>
         </div>
 
-        <!-- Research Information -->
+        <!-- Teaching context -->
         <div class="detail-section">
-          <h4>Research Information</h4>
+          <h4>Teaching context</h4>
           
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject.Subjects && selectedProject.Subjects.length > 0">
             <label>Subjects:</label>
             <div class="tags-container">
               <span v-for="subject in selectedProject.Subjects" :key="subject" class="detail-tag">
@@ -506,7 +507,7 @@
               </span>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject.Country && selectedProject.Country.length > 0">
             <label>Country:</label>
             <div class="tags-container">
               <span v-for="country in selectedProject.Country" :key="country" class="detail-tag">
@@ -523,7 +524,7 @@
             <label>Visualization Types:</label>
             <div class="visualization-types">
               <div v-for="(types, category) in selectedProject['Visualization types']" :key="category">
-                <h5>{{ category }}:</h5>
+                <h5 v-if="types.length > 0">{{ category }}:</h5>
                 <div class="tags-container">
                   <span v-for="type in types" :key="type" class="detail-tag">
                     {{ type }}
@@ -532,7 +533,7 @@
               </div>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Visualization forms'] && selectedProject['Visualization forms'].length > 0">
             <label>Visualization Forms:</label>
             <div class="tags-container">
               <span v-for="form in selectedProject['Visualization forms']" :key="form" class="detail-tag">
@@ -540,7 +541,7 @@
               </span>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Tool types'] && selectedProject['Tool types'].length > 0">
             <label>Tool Types:</label>
             <div class="tags-container">
               <span v-for="tool in selectedProject['Tool types']" :key="tool" class="detail-tag">
@@ -548,7 +549,7 @@
               </span>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Education goals'] && selectedProject['Education goals'].length > 0">
             <label>Education Goals:</label>
             <div class="tags-container">
               <span v-for="goal in selectedProject['Education goals']" :key="goal" class="detail-tag">
@@ -561,7 +562,7 @@
         <!-- Pedagogy -->
         <div class="detail-section">
           <h4>Pedagogy</h4>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Teaching environment'] && selectedProject['Teaching environment'].length > 0">
             <label>Teaching Environment:</label>
             <div class="tags-container">
               <span v-for="env in selectedProject['Teaching environment']" :key="env" class="detail-tag">
@@ -569,7 +570,7 @@
               </span>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Teaching mode'] && selectedProject['Teaching mode'].length > 0">
             <label>Teaching Mode:</label>
             <div class="tags-container">
               <span v-for="mode in selectedProject['Teaching mode']" :key="mode" class="detail-tag">
@@ -577,7 +578,7 @@
               </span>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Non-lecturing activities'] && selectedProject['Non-lecturing activities'].length > 0">
             <label>Non-lecturing Activities:</label>
             <div class="tags-container">
               <span v-for="activity in selectedProject['Non-lecturing activities']" :key="activity" class="detail-tag">
@@ -585,7 +586,7 @@
               </span>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject.Collaboration && selectedProject.Collaboration.length > 0">
             <label>Collaboration:</label>
             <div class="tags-container">
               <span v-for="collab in selectedProject.Collaboration" :key="collab" class="detail-tag">
@@ -593,11 +594,11 @@
               </span>
             </div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item" v-if="hasTheoreticalUnderpinnings">
             <label>Theoretical underpinnings:</label>
             <div class="visualization-types">
               <div v-for="(types, category) in selectedProject['Theoretical underpinnings']" :key="category">
-                <h5>{{ category }}:</h5>
+                <h5 v-if="types.length > 0">{{ category }}:</h5>
                 <div class="tags-container">
                   <span v-for="type in types" :key="type" class="detail-tag">
                     {{ type }}
@@ -611,7 +612,7 @@
         <!-- Effects -->
         <div class="detail-section">
           <h4>Effects</h4>
-          <div class="detail-item">
+          <div class="detail-item" v-if="selectedProject['Evaluation metrics'] && selectedProject['Evaluation metrics'].length > 0">
             <label>Evaluation Metrics:</label>
             <div class="tags-container">
               <span v-for="metric in selectedProject['Evaluation metrics']" :key="metric" class="detail-tag">
@@ -702,6 +703,15 @@ export default {
     }
   },
   computed: {
+    hasTheoreticalUnderpinnings() {
+      if (!this.selectedProject || !this.selectedProject['Theoretical underpinnings']) {
+        return false;
+      }
+      const theories = this.selectedProject['Theoretical underpinnings'];
+      // 检查是否有任何子类包含数据
+      return Object.values(theories).some(category =>category.length > 0);
+    },
+    
     filteredProjects() {
       let filtered = this.projects;
 
