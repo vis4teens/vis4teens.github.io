@@ -10,7 +10,7 @@
       </button>
     </div>
     <div class="nav-links" :class="{ 'nav-open': isMenuOpen }">
-      <router-link to="/data-display" class="nav-link" @click="closeMenu">Data Display</router-link>
+      <router-link to="/data-display" class="nav-link" @click="closeMenu">Reasearch Papers</router-link>
       <router-link to="/correlation-matrix" class="nav-link" @click="closeMenu">Correlation Matrix</router-link>
       <!-- <router-link to="/sankey-diagram" class="nav-link" @click="closeMenu">Sankey Diagram</router-link> -->
     </div>
@@ -126,6 +126,7 @@ export default {
   color: #2c1810;
   font-weight: 500;
   padding: 0.5rem 1rem;
+  font-size: 17px;
   /* border-radius: 4px; */
   /* transition: all 0.3s ease; */
   font-family: 'Calibri', Arial, serif;

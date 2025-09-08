@@ -425,7 +425,7 @@
           <!-- Title and link -->
           <div class="project-title-container">
             <h3 class="project-title">{{ truncateTitle(project.Title) }}</h3>
-            <span>{{project.Id}}</span>
+            <span>ID:{{project.Id}}</span>
           </div>
           
           <!-- Year, source and publication type -->
@@ -433,7 +433,7 @@
             <!-- {{ project.Year }} {{ project.Source }} {{ project['Publication type'] }} -->
             <span class="project-year">{{ project.Year }}</span>
             
-            <span class="project-pub-type">{{ project['Publication type'] }}</span>
+            <!-- <span class="project-pub-type">{{ project['Publication type'] }}</span> -->
             <span class="project-source">{{ project.Source }}</span>
             <a 
               v-if="project.Link" 
@@ -1354,10 +1354,10 @@ export default {
 .filter-section-divider h3 {
   margin: 0;
   color: #51B0CA;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -1480,7 +1480,7 @@ export default {
 }
 
 .external-link-icon {
-  font-size: 17px;
+  font-size: 15px;
   text-decoration: none;
   color: #51B0CA;
   padding: 4px;
@@ -1520,7 +1520,7 @@ export default {
   font-size: 12px;
   font-weight: 500;
   border: 1px solid #e9ecef;
-  max-width: 150px;
+  max-width: 130px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
