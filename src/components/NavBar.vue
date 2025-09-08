@@ -55,7 +55,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #F4C027;
+  background-color: #51B0CA;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -126,8 +126,8 @@ export default {
   color: #2c1810;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  /* border-radius: 4px; */
+  /* transition: all 0.3s ease; */
   font-family: 'Calibri', Arial, serif;
 }
 
@@ -137,9 +137,21 @@ export default {
 } */
 
 .router-link-active {
-  color: #F4C027 !important;
-  background-color: #1a0f0a;
+  color: #1a0f0a !important;
+  background-color: transparent;
   font-weight: bold;
+  position: relative;
+}
+
+.router-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background-color: #1a0f0a;
 }
 
 .nav-image {
@@ -158,16 +170,16 @@ export default {
   transform-origin: top center;
 }
 
-@keyframes wiggle {
+/* @keyframes wiggle {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(-15deg); }
   75% { transform: rotate(15deg); }
   100% { transform: rotate(0deg); }
-}
+} */
 
-.wiggle {
+/* .wiggle {
   animation: wiggle 0.5s ease-in-out;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .menu-toggle {
@@ -181,7 +193,7 @@ export default {
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: #F4C027;
+    background-color: #51B0CA;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     gap: 0.5rem;

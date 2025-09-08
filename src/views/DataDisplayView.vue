@@ -416,6 +416,16 @@
           <!-- Title and link -->
           <div class="project-title-container">
             <h3 class="project-title">{{ truncateTitle(project.Title) }}</h3>
+            <span>{{project.Id}}</span>
+          </div>
+          
+          <!-- Year, source and publication type -->
+          <div class="project-meta">
+            <!-- {{ project.Year }} {{ project.Source }} {{ project['Publication type'] }} -->
+            <span class="project-year">{{ project.Year }}</span>
+            
+            <span class="project-pub-type">{{ project['Publication type'] }}</span>
+            <span class="project-source">{{ project.Source }}</span>
             <a 
               v-if="project.Link" 
               :href="project.Link" 
@@ -426,15 +436,6 @@
             >
               🔗
             </a>
-          </div>
-          
-          <!-- Year, source and publication type -->
-          <div class="project-meta">
-            <!-- {{ project.Year }} {{ project.Source }} {{ project['Publication type'] }} -->
-            <span class="project-year">{{ project.Year }}</span>
-            
-            <span class="project-pub-type">{{ project['Publication type'] }}</span>
-            <span class="project-source">{{ project.Source }}</span>
           </div>
           
           <!-- Explore more button -->
@@ -1494,7 +1495,7 @@ export default {
 }
 
 .project-year {
-  background-color: #8456A1;
+  background-color: #FFBA00;
   color: white;
   padding: 4px 10px;
   border-radius: 20px;
@@ -1529,7 +1530,7 @@ export default {
 .explore-button {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #70d3b4 0%, #51B0CA 100%);
   color: white;
   border: none;
   border-radius: 9px;
