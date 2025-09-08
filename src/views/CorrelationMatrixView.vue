@@ -132,6 +132,7 @@
                 :class="{ 'with-heatmap': showHeatmap }"
                 :style="getCellStyle(currentMatrix.data[rowIndex][colIndex])"
                 :title="`${row} - ${col}: ${currentMatrix.data[rowIndex][colIndex]}`"
+                @click="openCellModal(row, col, currentMatrix.data[rowIndex][colIndex])"
               >
                 <span v-if="showValues">
                   {{ currentMatrix.data[rowIndex][colIndex] }}
@@ -218,6 +219,50 @@
     <div class="loading" v-if="loading">
       <p>Generating matrix...</p>
     </div>
+
+    <!-- Cell Details Modal -->
+    <div class="modal-overlay" v-if="showModal" @click="closeModal">
+      <div class="modal-content" @click.stop>
+        <div class="modal-header">
+          <h3>Related Projects</h3>
+          <button class="close-button" @click="closeModal">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-info">
+            <p><strong>X-axis:</strong> {{ modalData.xCategory }}</p>
+            <p><strong>Y-axis:</strong> {{ modalData.yCategory }}</p>
+            <p><strong>Count:</strong> {{ modalData.count }} projects</p>
+          </div>
+          <div class="projects-list" v-if="filteredProjects.length > 0">
+            <div 
+              v-for="project in filteredProjects" 
+              :key="project.Id"
+              class="project-item"
+            >
+              <div class="project-title">
+                {{ project.Title }} <span class="project-id">ID: {{ project.Id }}</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">{{ project.Year }}</span>
+                <span class="project-source">{{ project.Source }}</span>
+                <a 
+                  v-if="project.Link" 
+                  :href="project.Link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  🔗 View Paper
+                </a>
+              </div>
+            </div>
+          </div>
+          <div v-else class="no-projects">
+            <p>No projects found for this combination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -234,6 +279,15 @@ export default {
       showHeatmap: true,
       showValues: true,
       zoomLevel: 1.0,
+      // Modal related data
+      showModal: false,
+      modalData: {
+        xCategory: '',
+        yCategory: '',
+        count: 0
+      },
+      filteredProjects: [],
+      allProjects: [],
       // Manual column grouping - specify column range merging
       manualColumnGroups: {
         // Example: column grouping when X-axis is Visualization types
@@ -398,6 +452,7 @@ export default {
   
   async mounted() {
     await this.loadMatrixData();
+    await this.loadProjectsData();
   },
   
   methods: {
@@ -416,6 +471,21 @@ export default {
         }
       } finally {
         this.loading = false;
+      }
+    },
+    
+    async loadProjectsData() {
+      try {
+        const response = await fetch('/src/assets/data/codes.json');
+        this.allProjects = await response.json();
+      } catch (error) {
+        console.error('Failed to load projects data:', error);
+        try {
+          const projectsData = require('@/assets/data/codes.json');
+          this.allProjects = projectsData;
+        } catch (localError) {
+          console.error('Failed to load local projects data:', localError);
+        }
       }
     },
     
@@ -593,7 +663,97 @@ export default {
       return false;
     },
     
+    openCellModal(row, col, count) {
+      if (count === 0) return; // Don't open modal for zero values
+      
+      this.modalData = {
+        xCategory: this.currentMatrix.x_category,
+        yCategory: this.currentMatrix.y_category,
+        count: count
+      };
+      
+      // Filter projects based on the clicked cell
+      this.filteredProjects = this.filterProjectsByCell(row, col);
+      this.showModal = true;
+    },
     
+    closeModal() {
+      this.showModal = false;
+      this.filteredProjects = [];
+    },
+    
+    filterProjectsByCell(row, col) {
+      if (!this.allProjects || this.allProjects.length === 0) {
+        return [];
+      }
+      
+      const xCategory = this.currentMatrix.x_category;
+      const yCategory = this.currentMatrix.y_category;
+      
+      return this.allProjects.filter(project => {
+        const hasXValue = this.projectHasValue(project, xCategory, row);
+        const hasYValue = this.projectHasValue(project, yCategory, col);
+        return hasXValue && hasYValue;
+      });
+    },
+    
+    projectHasValue(project, category, value) {
+      // Handle different category types
+      switch (category) {
+        case 'Subjects':
+          return project.Subjects && project.Subjects.includes(value);
+        case 'Country':
+          return project.Country && project.Country.includes(value);
+        case 'Education goals':
+          return project['Education goals'] && project['Education goals'].includes(value);
+        case 'Visualization forms':
+          return project['Visualization forms'] && project['Visualization forms'].includes(value);
+        case 'Tool types':
+          return project['Tool types'] && project['Tool types'].includes(value);
+        case 'Teaching environment':
+          return project['Teaching environment'] && project['Teaching environment'].includes(value);
+        case 'Teaching mode':
+          return project['Teaching mode'] && project['Teaching mode'].includes(value);
+        case 'Non-lecturing activities':
+          return project['Non-lecturing activities'] && project['Non-lecturing activities'].includes(value);
+        case 'Collaboration':
+          return project.Collaboration && project.Collaboration.includes(value);
+        case 'Evaluation metrics':
+          return project['Evaluation metrics'] && project['Evaluation metrics'].includes(value);
+        case 'Other tested variables':
+          return project['Other tested variables'] && project['Other tested variables'].includes(value);
+        case 'Visualization types':
+          return project['Visualization types'] && this.hasVisualizationType(project['Visualization types'], value);
+        case 'Theoretical underpinnings':
+          return project['Theoretical underpinnings'] && this.hasTheoreticalUnderpinning(project['Theoretical underpinnings'], value);
+        default:
+          return false;
+      }
+    },
+    
+    hasVisualizationType(visualizationTypes, value) {
+      if (!visualizationTypes || typeof visualizationTypes !== 'object') return false;
+      
+      // Check if the value exists in any of the visualization type categories
+      for (const category in visualizationTypes) {
+        if (visualizationTypes[category] && visualizationTypes[category].includes(value)) {
+          return true;
+        }
+      }
+      return false;
+    },
+    
+    hasTheoreticalUnderpinning(theoreticalUnderpinnings, value) {
+      if (!theoreticalUnderpinnings || typeof theoreticalUnderpinnings !== 'object') return false;
+      
+      // Check if the value exists in any of the theoretical underpinning categories
+      for (const category in theoreticalUnderpinnings) {
+        if (theoreticalUnderpinnings[category] && theoreticalUnderpinnings[category].includes(value)) {
+          return true;
+        }
+      }
+      return false;
+    }
 
   }
 }
@@ -679,7 +839,7 @@ export default {
 
 .generate-btn {
   padding: 12px 24px;
-  background-color: #8456A1;
+  background-color: #51B0CA;
   color: white;
   border: none;
   border-radius: 4px;
@@ -761,7 +921,7 @@ export default {
 
 .matrix-wrapper {
   overflow: auto;
-  max-height: 70vh;
+  max-height: 80vh;
   border: 1px solid #333;
   margin-bottom: 20px;
   background-color: white;
@@ -1089,6 +1249,194 @@ export default {
     height: 30px;
     padding: 4px;
     font-size: 9px;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f8f9fa;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-info {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border-left: 4px solid #51B0CA;
+}
+
+.modal-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.projects-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.project-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.project-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.project-id {
+  background-color: #51B0CA;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-year {
+  background-color: #FFBA00;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.project-source {
+  background-color: #f8f9fa;
+  color: #495057;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.project-link {
+  color: #51B0CA;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.no-projects {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .modal-overlay {
+    padding: 10px;
+  }
+  
+  .modal-content {
+    max-height: 90vh;
+  }
+  
+  .modal-header {
+    padding: 15px;
+  }
+  
+  .modal-body {
+    padding: 15px;
+  }
+  
+  
+  .project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
   }
 }
 </style>

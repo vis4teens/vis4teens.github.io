@@ -6,7 +6,10 @@
       
       <!-- Search box -->
       <div class="search-section">
-        <h3>Search Projects</h3>
+        <!-- <h3>Search Projects</h3> -->
+        <div class="filter-header">
+            <label>Search Projects</label>
+          </div>
         <input 
           v-model="searchKeyword" 
           type="text" 
@@ -17,11 +20,15 @@
 
       <!-- Filters -->
       <div class="filter-section">
-        <h3>Filter Conditions</h3>
-        
+        <!-- <h3>Filter Conditions</h3> -->
+        <div class="filter-section-divider">
+          <h3>Basic Information</h3>
+        </div>
         <!-- Year filter -->
         <div class="filter-group">
-          <label>Year Range:</label>
+          <div class="filter-header">
+            <label>Year Range</label>
+          </div>
           <div class="year-range">
             <input v-model="yearRange.min" type="number" placeholder="1991" />
             -
@@ -53,7 +60,9 @@
             </label>
           </div>
         </div>
-
+        <div class="filter-section-divider">
+          <h3>Teaching Context</h3>
+        </div>
         <!-- Subjects filter -->
         <div class="filter-group">
           <div class="filter-header" @click="toggleSection('subjects')">
@@ -646,8 +655,8 @@ export default {
       projects: [],
       searchKeyword: '',
       yearRange: {
-        min: null,
-        max: null
+        min: 1991,
+        max: 2024
       },
       selectedResearchAreas: [],
       selectedSubjects: [],
@@ -1233,7 +1242,7 @@ export default {
 .selected-tag {
   display: inline-flex;
   align-items: center;
-  background-color: #8456A1;
+  background-color: #51B0CA;
   color: white;
   padding: 4px 8px;
   border-radius: 16px;
@@ -1335,7 +1344,7 @@ export default {
 .filter-section-divider {
   margin: 30px 0 20px 0;
   padding: 15px 0 10px 0;
-  border-top: 2px solid #8456A1;
+  border-top: 2px solid #51B0CA;
   border-bottom: 1px solid #e0e0e0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 8px;
@@ -1344,7 +1353,7 @@ export default {
 
 .filter-section-divider h3 {
   margin: 0;
-  color: #8456A1;
+  color: #51B0CA;
   font-size: 1.3rem;
   font-weight: 700;
   text-align: center;
@@ -1473,7 +1482,7 @@ export default {
 .external-link-icon {
   font-size: 17px;
   text-decoration: none;
-  color: #8456A1;
+  color: #51B0CA;
   padding: 4px;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -1615,7 +1624,7 @@ export default {
   margin-bottom: 15px;
   font-size: 1.2rem;
   font-weight: 600;
-  border-left: 4px solid #8456A1;
+  border-left: 4px solid #51B0CA;
   padding-left: 10px;
 }
 
@@ -1639,7 +1648,7 @@ export default {
 }
 
 .detail-item a {
-  color: #8456A1;
+  color: #51B0CA;
   text-decoration: none;
   font-weight: 500;
 }
