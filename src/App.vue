@@ -52,18 +52,5 @@ body {
     padding-top: 64px; /* 较小屏幕上导航栏高度减小 */
   }
 }
-/* @font-face {
-  font-family: 'Trajan';
-  src: url('./assets/fonts/TrajanusLTPro-Roman.OTF') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-} */
-/* h1 {
-  font-family: 'Playfair Display', serif; 
-  font-weight: bold;
-  font-size: 3rem;
-  color: #2c3e50; 
-  text-align: center;
-  margin-bottom: 2rem; 
-} */
+
 </style>

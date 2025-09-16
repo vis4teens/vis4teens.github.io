@@ -76,7 +76,7 @@ export default {
   color: #333;
   font-size: 1.6rem;
   font-weight: bold;
-  font-family: 'Calibri', Arial, serif;
+  font-family: Arial, serif;
   transition: color 0.3s ease;
 }
 
@@ -126,10 +126,10 @@ export default {
   color: #2c1810;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  font-size: 17px;
+  font-size: 1.2em;
   /* border-radius: 4px; */
   /* transition: all 0.3s ease; */
-  font-family: 'Calibri', Arial, serif;
+  font-family: Arial, serif;
 }
 
 /* .nav-link:hover {

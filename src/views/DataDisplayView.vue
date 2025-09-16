@@ -7,9 +7,9 @@
       <!-- Search box -->
       <div class="search-section">
         <!-- <h3>Search Projects</h3> -->
-        <div class="filter-header">
+        <!-- <div class="filter-header">
             <label>Search Projects</label>
-          </div>
+          </div> -->
         <input 
           v-model="searchKeyword" 
           type="text" 
@@ -410,7 +410,7 @@
     <!-- Right project display area -->
     <div class="display-panel">
       <div class="display-header">
-        <h2>Paper list</h2>
+        <h2>Paper List</h2>
         <div class="results-info">
           Found {{ filteredProjects.length }} projects
         </div>
@@ -425,7 +425,7 @@
           <!-- Title and link -->
           <div class="project-title-container">
             <h3 class="project-title">{{ truncateTitle(project.Title) }}</h3>
-            <span>ID:{{project.Id}}</span>
+            <span>ID:{{project.Id+1}}</span>
           </div>
           
           <!-- Year, source and publication type -->
@@ -1139,7 +1139,7 @@ export default {
   width: 300px;
   background-color: #ffffff;
   border-right: 1px solid #e0e0e0;
-  padding: 20px;
+  padding: 20px 20px 20px 32px;
   overflow-y: auto;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
 }
@@ -1147,7 +1147,7 @@ export default {
 .filter-panel h2 {
   margin-bottom: 20px;
   color: #333;
-  font-size: 1.6rem;
+  font-size: 1.2em;
 }
 
 .search-section {
@@ -1343,23 +1343,17 @@ export default {
 /* 筛选区域分隔符 */
 .filter-section-divider {
   margin: 30px 0 20px 0;
-  padding: 15px 0 10px 0;
-  border-top: 2px solid #51B0CA;
-  border-bottom: 1px solid #e0e0e0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-radius: 8px;
+  padding: 0 0 0 15px;
+  border-left: 4px solid #51B0CA;
   position: relative;
 }
 
 .filter-section-divider h3 {
   margin: 0;
   color: #51B0CA;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
-  /* text-transform: uppercase; */
-  letter-spacing: 1px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: left;
 }
 
 /* 筛选操作按钮 */
@@ -1422,7 +1416,7 @@ export default {
 
 .display-header h2 {
   color: #333;
-  font-size: 1.6rem;
+  font-size: 1.2em;
 }
 
 .results-info {

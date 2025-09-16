@@ -240,7 +240,7 @@
               class="project-item"
             >
               <div class="project-title">
-                {{ project.Title }} <span class="project-id">ID: {{ project.Id }}</span>
+                {{ project.Title }} <span class="project-id">ID: {{ project.Id+1 }}</span>
               </div>
               <div class="project-meta">
                 <span class="project-year">{{ project.Year }}</span>
