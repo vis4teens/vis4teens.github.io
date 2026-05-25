@@ -1,7 +1,7 @@
 <template>
   <div class="data-display-container">
     <!-- Left filter area -->
-    <div class="filter-panel">
+    <div class="filter-panel" :style="{ width: filterPanelWidth + 'px' }">
       <h2>Filter and Search</h2>
       
       <!-- Search box -->
@@ -56,7 +56,7 @@
                 :value="area" 
                 v-model="selectedResearchAreas"
               />
-              <span class="checkbox-text">{{ area }}</span>
+              <span class="checkbox-text">{{ area }} ({{ researchAreasCounts[area] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -82,7 +82,7 @@
                 :value="subject" 
                 v-model="selectedSubjects"
               />
-              <span class="checkbox-text">{{ subject }}</span>
+              <span class="checkbox-text">{{ subject }} ({{ subjectsCounts[subject] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -106,7 +106,7 @@
                 :value="country" 
                 v-model="selectedCountries"
               />
-              <span class="checkbox-text">{{ country }}</span>
+              <span class="checkbox-text">{{ country }} ({{ countriesCounts[country] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -138,7 +138,7 @@
                     :value="type" 
                     v-model="selectedVisualizationTypes"
                   />
-                  <span class="checkbox-text">{{ type }}</span>
+                  <span class="checkbox-text">{{ type }} ({{ (visualizationTypesCounts[category] && visualizationTypesCounts[category][type]) || 0 }})</span>
                 </label>
               </div>
             </div>
@@ -164,7 +164,7 @@
                 :value="form" 
                 v-model="selectedVisualizationForms"
               />
-              <span class="checkbox-text">{{ form }}</span>
+              <span class="checkbox-text">{{ form }} ({{ visualizationFormsCounts[form] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -188,7 +188,7 @@
                 :value="type" 
                 v-model="selectedToolTypes"
               />
-              <span class="checkbox-text">{{ type }}</span>
+              <span class="checkbox-text">{{ type }} ({{ toolTypesCounts[type] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -212,7 +212,7 @@
                 :value="goal" 
                 v-model="selectedEducationGoals"
               />
-              <span class="checkbox-text">{{ goal }}</span>
+              <span class="checkbox-text">{{ goal }} ({{ educationGoalsCounts[goal] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -241,7 +241,7 @@
                 :value="env" 
                 v-model="selectedTeachingEnvironments"
               />
-              <span class="checkbox-text">{{ env }}</span>
+              <span class="checkbox-text">{{ env }} ({{ teachingEnvironmentsCounts[env] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -265,7 +265,7 @@
                 :value="mode" 
                 v-model="selectedTeachingModes"
               />
-              <span class="checkbox-text">{{ mode }}</span>
+              <span class="checkbox-text">{{ mode }} ({{ teachingModesCounts[mode] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -289,7 +289,7 @@
                 :value="activity" 
                 v-model="selectedNonLecturingActivities"
               />
-              <span class="checkbox-text">{{ activity }}</span>
+              <span class="checkbox-text">{{ activity }} ({{ nonLecturingActivitiesCounts[activity] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -313,7 +313,7 @@
                 :value="collab" 
                 v-model="selectedCollaboration"
               />
-              <span class="checkbox-text">{{ collab }}</span>
+              <span class="checkbox-text">{{ collab }} ({{ collaborationCounts[collab] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -340,7 +340,7 @@
                     :value="theory" 
                     v-model="selectedTheoreticalUnderpinnings"
                   />
-                  <span class="checkbox-text">{{ theory }}</span>
+                  <span class="checkbox-text">{{ theory }} ({{ (theoreticalUnderpinningsCounts[category] && theoreticalUnderpinningsCounts[category][theory]) || 0 }})</span>
                 </label>
               </div>
             </div>
@@ -371,7 +371,7 @@
                 :value="metric" 
                 v-model="selectedEvaluationMetrics"
               />
-              <span class="checkbox-text">{{ metric }}</span>
+              <span class="checkbox-text">{{ metric }} ({{ evaluationMetricsCounts[metric] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -395,7 +395,7 @@
                 :value="variable" 
                 v-model="selectedOtherTestedVariables"
               />
-              <span class="checkbox-text">{{ variable }}</span>
+              <span class="checkbox-text">{{ variable }} ({{ otherTestedVariablesCounts[variable] || 0 }})</span>
             </label>
           </div>
         </div>
@@ -405,6 +405,7 @@
           <button @click="resetFilters" class="reset-button">Reset Filters</button>
         </div>
       </div>
+      <div class="filter-resizer" @mousedown="startResize"></div>
     </div>
 
     <!-- Right project display area -->
@@ -675,23 +676,43 @@ export default {
       
       // Filter options
       researchAreas: [],
+      researchAreasCounts: {},
       subjects: [],
+      subjectsCounts: {},
       countries: [],
+      countriesCounts: {},
       educationGoals: [],
+      educationGoalsCounts: {},
       visualizationForms: [],
+      visualizationFormsCounts: {},
       toolTypes: [],
+      toolTypesCounts: {},
       teachingEnvironments: [],
+      teachingEnvironmentsCounts: {},
       teachingModes: [],
+      teachingModesCounts: {},
       nonLecturingActivities: [],
+      nonLecturingActivitiesCounts: {},
       collaboration: [],
+      collaborationCounts: {},
       evaluationMetrics: [],
+      evaluationMetricsCounts: {},
       otherTestedVariables: [],
+      otherTestedVariablesCounts: {},
       visualizationTypesCategories: {},
+      visualizationTypesCounts: {},
       theoreticalUnderpinningsCategories: {},
+      theoreticalUnderpinningsCounts: {},
       
       // Sidebar related
       sidebarOpen: false,
       selectedProject: null,
+
+      // Filter panel resize
+      filterPanelWidth: 300,
+      isResizingFilter: false,
+      resizeStartX: 0,
+      resizeStartWidth: 300,
       
       // Collapse state
       expandedSections: {
@@ -894,6 +915,12 @@ export default {
   async mounted() {
     await this.loadData();
     this.extractFilterOptions();
+    window.addEventListener('mousemove', this.onResizeMove);
+    window.addEventListener('mouseup', this.stopResize);
+  },
+  beforeDestroy() {
+    window.removeEventListener('mousemove', this.onResizeMove);
+    window.removeEventListener('mouseup', this.stopResize);
   },
   
   methods: {
@@ -927,65 +954,95 @@ export default {
       const collaborationSet = new Set();
       const evaluationMetricsSet = new Set();
       const otherTestedVariablesSet = new Set();
+
+      const researchAreasCounts = {};
+      const subjectsCounts = {};
+      const countriesCounts = {};
+      const educationGoalsCounts = {};
+      const visualizationFormsCounts = {};
+      const toolTypesCounts = {};
+      const teachingEnvironmentsCounts = {};
+      const teachingModesCounts = {};
+      const nonLecturingActivitiesCounts = {};
+      const collaborationCounts = {};
+      const evaluationMetricsCounts = {};
+      const otherTestedVariablesCounts = {};
       
       // Objects for storing sub-categories
       const visualizationTypesMap = {};
       const theoreticalUnderpinningsMap = {};
+      const visualizationTypesCounts = {};
+      const theoreticalUnderpinningsCounts = {};
+
+      const incrementCount = (map, key) => {
+        map[key] = (map[key] || 0) + 1;
+      };
       
       this.projects.forEach(project => {
         // 研究领域
         if (project['Research areas']) {
           project['Research areas'].forEach(area => researchAreasSet.add(area));
+          project['Research areas'].forEach(area => incrementCount(researchAreasCounts, area));
         }
         
         // 学科
         if (project.Subjects) {
           project.Subjects.forEach(subject => subjectsSet.add(subject));
+          project.Subjects.forEach(subject => incrementCount(subjectsCounts, subject));
         }
         
         // 国家
         if (project.Country) {
           project.Country.forEach(country => countriesSet.add(country));
+          project.Country.forEach(country => incrementCount(countriesCounts, country));
         }
         
         // 教育目标
         if (project['Education goals']) {
           project['Education goals'].forEach(goal => educationGoalsSet.add(goal));
+          project['Education goals'].forEach(goal => incrementCount(educationGoalsCounts, goal));
         }
         
         // 可视化形式
         if (project['Visualization forms']) {
           project['Visualization forms'].forEach(form => visualizationFormsSet.add(form));
+          project['Visualization forms'].forEach(form => incrementCount(visualizationFormsCounts, form));
         }
         
         // 工具类型
         if (project['Tool types']) {
           project['Tool types'].forEach(type => toolTypesSet.add(type));
+          project['Tool types'].forEach(type => incrementCount(toolTypesCounts, type));
         }
         
         // 教学环境
         if (project['Teaching environment']) {
           project['Teaching environment'].forEach(env => teachingEnvironmentsSet.add(env));
+          project['Teaching environment'].forEach(env => incrementCount(teachingEnvironmentsCounts, env));
         }
         
         // 教学模式
         if (project['Teaching mode']) {
           project['Teaching mode'].forEach(mode => teachingModesSet.add(mode));
+          project['Teaching mode'].forEach(mode => incrementCount(teachingModesCounts, mode));
         }
         
         // 非讲授活动
         if (project['Non-lecturing activities']) {
           project['Non-lecturing activities'].forEach(activity => nonLecturingActivitiesSet.add(activity));
+          project['Non-lecturing activities'].forEach(activity => incrementCount(nonLecturingActivitiesCounts, activity));
         }
         
         // 协作
         if (project.Collaboration) {
           project.Collaboration.forEach(collab => collaborationSet.add(collab));
+          project.Collaboration.forEach(collab => incrementCount(collaborationCounts, collab));
         }
         
         // 评估指标
         if (project['Evaluation metrics']) {
           project['Evaluation metrics'].forEach(metric => evaluationMetricsSet.add(metric));
+          project['Evaluation metrics'].forEach(metric => incrementCount(evaluationMetricsCounts, metric));
         }
         
         // 其他测试变量
@@ -993,6 +1050,7 @@ export default {
           project['Other tested variables'].forEach(variable => {
             if (variable && variable.trim()) { // 过滤空值
               otherTestedVariablesSet.add(variable);
+              incrementCount(otherTestedVariablesCounts, variable);
             }
           });
         }
@@ -1003,10 +1061,14 @@ export default {
             if (!visualizationTypesMap[category]) {
               visualizationTypesMap[category] = new Set();
             }
+            if (!visualizationTypesCounts[category]) {
+              visualizationTypesCounts[category] = {};
+            }
             if (project['Visualization types'][category]) {
               project['Visualization types'][category].forEach(type => {
                 if (type && type.trim()) { // 过滤空值
                   visualizationTypesMap[category].add(type);
+                  incrementCount(visualizationTypesCounts[category], type);
                 }
               });
             }
@@ -1019,10 +1081,14 @@ export default {
             if (!theoreticalUnderpinningsMap[category]) {
               theoreticalUnderpinningsMap[category] = new Set();
             }
+            if (!theoreticalUnderpinningsCounts[category]) {
+              theoreticalUnderpinningsCounts[category] = {};
+            }
             if (project['Theoretical underpinnings'][category]) {
               project['Theoretical underpinnings'][category].forEach(theory => {
                 if (theory && theory.trim()) { // Filter empty values
                   theoreticalUnderpinningsMap[category].add(theory);
+                  incrementCount(theoreticalUnderpinningsCounts[category], theory);
                 }
               });
             }
@@ -1031,29 +1097,58 @@ export default {
       });
       
       // Convert to sorted arrays
-      this.researchAreas = Array.from(researchAreasSet).sort();
-      this.subjects = Array.from(subjectsSet).sort();
-      this.countries = Array.from(countriesSet).sort();
-      this.educationGoals = Array.from(educationGoalsSet).sort();
-      this.visualizationForms = Array.from(visualizationFormsSet).sort();
-      this.toolTypes = Array.from(toolTypesSet).sort();
-      this.teachingEnvironments = Array.from(teachingEnvironmentsSet).sort();
-      this.teachingModes = Array.from(teachingModesSet).sort();
-      this.nonLecturingActivities = Array.from(nonLecturingActivitiesSet).sort();
-      this.collaboration = Array.from(collaborationSet).sort();
-      this.evaluationMetrics = Array.from(evaluationMetricsSet).sort();
-      this.otherTestedVariables = Array.from(otherTestedVariablesSet).sort();
+      const sortByCountThenName = (items, counts) => (
+        items.sort((a, b) => {
+          const countDiff = (counts[b] || 0) - (counts[a] || 0);
+          if (countDiff !== 0) return countDiff;
+          return a.localeCompare(b);
+        })
+      );
+
+      this.researchAreas = sortByCountThenName(Array.from(researchAreasSet), researchAreasCounts);
+      this.subjects = sortByCountThenName(Array.from(subjectsSet), subjectsCounts);
+      this.countries = sortByCountThenName(Array.from(countriesSet), countriesCounts);
+      this.educationGoals = sortByCountThenName(Array.from(educationGoalsSet), educationGoalsCounts);
+      this.visualizationForms = sortByCountThenName(Array.from(visualizationFormsSet), visualizationFormsCounts);
+      this.toolTypes = sortByCountThenName(Array.from(toolTypesSet), toolTypesCounts);
+      this.teachingEnvironments = sortByCountThenName(Array.from(teachingEnvironmentsSet), teachingEnvironmentsCounts);
+      this.teachingModes = sortByCountThenName(Array.from(teachingModesSet), teachingModesCounts);
+      this.nonLecturingActivities = sortByCountThenName(Array.from(nonLecturingActivitiesSet), nonLecturingActivitiesCounts);
+      this.collaboration = sortByCountThenName(Array.from(collaborationSet), collaborationCounts);
+      this.evaluationMetrics = sortByCountThenName(Array.from(evaluationMetricsSet), evaluationMetricsCounts);
+      this.otherTestedVariables = sortByCountThenName(Array.from(otherTestedVariablesSet), otherTestedVariablesCounts);
       
       // 转换二级分类为排序对象
       this.visualizationTypesCategories = {};
       Object.keys(visualizationTypesMap).forEach(category => {
-        this.visualizationTypesCategories[category] = Array.from(visualizationTypesMap[category]).sort();
+        this.visualizationTypesCategories[category] = sortByCountThenName(
+          Array.from(visualizationTypesMap[category]),
+          visualizationTypesCounts[category]
+        );
       });
-      
+
       this.theoreticalUnderpinningsCategories = {};
       Object.keys(theoreticalUnderpinningsMap).forEach(category => {
-        this.theoreticalUnderpinningsCategories[category] = Array.from(theoreticalUnderpinningsMap[category]).sort();
+        this.theoreticalUnderpinningsCategories[category] = sortByCountThenName(
+          Array.from(theoreticalUnderpinningsMap[category]),
+          theoreticalUnderpinningsCounts[category]
+        );
       });
+
+      this.researchAreasCounts = researchAreasCounts;
+      this.subjectsCounts = subjectsCounts;
+      this.countriesCounts = countriesCounts;
+      this.educationGoalsCounts = educationGoalsCounts;
+      this.visualizationFormsCounts = visualizationFormsCounts;
+      this.toolTypesCounts = toolTypesCounts;
+      this.teachingEnvironmentsCounts = teachingEnvironmentsCounts;
+      this.teachingModesCounts = teachingModesCounts;
+      this.nonLecturingActivitiesCounts = nonLecturingActivitiesCounts;
+      this.collaborationCounts = collaborationCounts;
+      this.evaluationMetricsCounts = evaluationMetricsCounts;
+      this.otherTestedVariablesCounts = otherTestedVariablesCounts;
+      this.visualizationTypesCounts = visualizationTypesCounts;
+      this.theoreticalUnderpinningsCounts = theoreticalUnderpinningsCounts;
     },
     
     resetFilters() {
@@ -1122,6 +1217,23 @@ export default {
       this.selectedOtherTestedVariables = [];
       this.selectedVisualizationTypes = [];
       this.selectedTheoreticalUnderpinnings = [];
+    },
+    startResize(event) {
+      this.isResizingFilter = true;
+      this.resizeStartX = event.clientX;
+      this.resizeStartWidth = this.filterPanelWidth;
+    },
+    onResizeMove(event) {
+      if (!this.isResizingFilter) return;
+      const delta = event.clientX - this.resizeStartX;
+      const nextWidth = this.resizeStartWidth + delta;
+      const minWidth = 220;
+      const maxWidth = 520;
+      this.filterPanelWidth = Math.min(maxWidth, Math.max(minWidth, nextWidth));
+    },
+    stopResize() {
+      if (!this.isResizingFilter) return;
+      this.isResizingFilter = false;
     }
   }
 }
@@ -1136,12 +1248,28 @@ export default {
 }
 
 .filter-panel {
-  width: 300px;
   background-color: #ffffff;
   border-right: 1px solid #e0e0e0;
   padding: 20px 20px 20px 32px;
   overflow-y: auto;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  min-width: 220px;
+  max-width: 520px;
+}
+
+.filter-resizer {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 8px;
+  height: 100%;
+  cursor: col-resize;
+  background: transparent;
+}
+
+.filter-resizer:hover {
+  background: rgba(81, 176, 202, 0.2);
 }
 
 .filter-panel h2 {
@@ -1716,6 +1844,10 @@ export default {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #e0e0e0;
+  }
+
+  .filter-resizer {
+    display: none;
   }
   
   .display-panel {
