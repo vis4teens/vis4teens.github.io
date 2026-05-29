@@ -873,7 +873,7 @@ export default {
       // Evaluation metrics filter (multi-select)
       if (this.selectedEvaluationMetrics.length > 0) {
         filtered = filtered.filter(project => 
-          project['Evaluation metrics'] && project['Evaluation metrics'].some(metric =>
+          this.normalizeList(project['Evaluation metrics']).some(metric =>
             this.selectedEvaluationMetrics.includes(metric)
           )
         );
@@ -882,7 +882,7 @@ export default {
       // Other tested variables filter (multi-select)
       if (this.selectedOtherTestedVariables.length > 0) {
         filtered = filtered.filter(project => 
-          project['Other tested variables'] && project['Other tested variables'].some(variable =>
+          this.normalizeList(project['Other tested variables']).some(variable =>
             this.selectedOtherTestedVariables.includes(variable)
           )
         );
@@ -1018,6 +1018,8 @@ export default {
       const incrementCount = (map, key) => {
         map[key] = (map[key] || 0) + 1;
       };
+
+      const normalizeList = this.normalizeList;
       
       this.projects.forEach(project => {
         // 研究领域
@@ -1081,10 +1083,11 @@ export default {
         }
         
         // 评估指标
-        if (project['Evaluation metrics']) {
-          project['Evaluation metrics'].forEach(metric => evaluationMetricsSet.add(metric));
-          project['Evaluation metrics'].forEach(metric => incrementCount(evaluationMetricsCounts, metric));
-          project['Evaluation metrics'].forEach(metric => {
+        const evaluationMetrics = normalizeList(project['Evaluation metrics']);
+        if (evaluationMetrics.length > 0) {
+          evaluationMetrics.forEach(metric => evaluationMetricsSet.add(metric));
+          evaluationMetrics.forEach(metric => incrementCount(evaluationMetricsCounts, metric));
+          evaluationMetrics.forEach(metric => {
             const category = evaluationMetricToCategory.get(metric);
             if (category) {
               incrementCount(evaluationMetricsCategoryCounts[category], metric);
@@ -1093,8 +1096,9 @@ export default {
         }
         
         // 其他测试变量
-        if (project['Other tested variables']) {
-          project['Other tested variables'].forEach(variable => {
+        const otherTestedVariables = normalizeList(project['Other tested variables']);
+        if (otherTestedVariables.length > 0) {
+          otherTestedVariables.forEach(variable => {
             if (variable && variable.trim()) { // 过滤空值
               otherTestedVariablesSet.add(variable);
               incrementCount(otherTestedVariablesCounts, variable);
@@ -1243,6 +1247,18 @@ export default {
     formatEvaluationCategory(category) {
       if (category === 'no formal evaluation') return 'no';
       return category;
+    },
+
+    normalizeList(value) {
+      if (!value) return [];
+      if (Array.isArray(value)) return value;
+      if (typeof value === 'string') return [value];
+      if (typeof value === 'object') {
+        return Object.values(value)
+          .flat()
+          .filter(item => item && String(item).trim());
+      }
+      return [];
     },
     
     // 新增方法
