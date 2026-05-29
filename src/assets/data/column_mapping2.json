@@ -235,58 +235,45 @@
     "structural approach"
   ]
 },
-  "Evaluation metrics": [
-    "no formal evaluation",
-    "understanding/acquisition of knowledge",
-    "emotional engagement",
-    "behavioral engagement",
-    "usability/usefulness",
-    "knowledge intergration",
-    "interest/motivation",
-    "awareness",
-    "cognitive engagement",
-    "memory",
-    "knowledge transfer",
-    "conceptual change",
-    "confidence/selfefficacy",
-    "diverging thinking/creativity",
-    "gaze point",
-    "social engagement",
-    "speed",
-    "computational thinking"
+  "Evaluation metrics": {
+    "no":["no formal evaluation"],
+    "Learning performance": ["understanding/acquisition of knowledge",
+      "knowledge intergration",
+      "memory",
+      "interest/motivation",
+      "knowledge transfer",
+      "conceptual change",
+      "speed",
+      "computational thinking",
+      "diverging thinking/creativity",
+     "gaze point", "awareness"
   ],
-  "Other tested variables": [
-    "culture",
-    "paper/computer",
-    "age",
-    "prior knowledge",
-    "3d/2d",
-    "visual-spatial ability",
-    "drawing",
-    "dynamic/static",
-    "critique",
-    "high-achieving/low-achieving",
-    "AR/web",
-    "cognitive-science-based intervention",
-    "curricula",
-    "underrepresented minority status of the classrooms",
-    "gender",
-    "school (technical/non-technical)",
-    "metacognitive scaffolding strategy",
-    "prompting application - whether actually apply the prompts",
-    "dynamic 3d/static 2d",
-    "individual difference",
-    "gifted/standard",
-    "spatial ability",
-    "school",
-    "majors",
-    "perceived difficulty of the taught content",
-    "view/view+draw/view+animation",
-    "discipline/subject",
-    "teacher personality",
-    "reasoning quality",
-    "paper/2d/vr",
-    "gender identity",
-    "race/ethnicity"
-  ]
+    "User experience": [
+      "emotional engagement",
+      "behavioral engagement",
+      "usability/usefulness",
+      "cognitive engagement",
+      "confidence/selfefficacy",
+      "social engagement"
+    ]
+  },
+  "Other tested variables": {
+    "visualization designs": [
+      "static vs. dynamic","3d vs. 2d","2d interface vs. AR",
+      "paper vs. computer","icon vs. no icon","paper vs. 2d vs. VR"
+    ],
+    "student characteristics": [
+      "age", "gender","prior knowledge",
+      "spatial ability",
+      "race/ethnicity","gifted","high/low-achieving",
+      "prompting application","reasoning quality"
+    ],
+    "teaching strategies": [
+      "curriculum/subject",
+      "school","drawing activity",
+      "culture", "underrepresented minority status of the classrooms",
+      "teacher personality","critique strategy","metacognitive scaffolding strategy",
+      "cognitive-science-based intervention","difficulty of the taught content"
+    ]
+}
 }

@@ -5,7 +5,7 @@
     "Authors": "OSTROVSKY, B, POOLE, PH, SCIORTINO, F, STANLEY, HE, TRUNFIO, P",
     "Year": 1991,
     "Link": "http://doi.org/10.1016/03784371(91)901659",
-    "Source": "Physica A",
+    "Source": "Physica a",
     "Publication type": "J",
     "Research areas": [
       "Physics"
@@ -39,12 +39,18 @@
     "Collaboration": [
       "social resources"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -103,12 +109,18 @@
       "teamwork",
       "social resources"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -119,18 +131,8 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "affordance",
-        "apprenticeship",
-        "inscriptions",
-        "language games",
-        "learning by doing",
-        "project-based learning",
-        "scaffolding"
-      ],
-      "cognitive theory": [
-        "distributed cognition theory"
-      ],
+      "learning theory": [],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -178,12 +180,18 @@
     "Collaboration": [
       "social resources"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -194,11 +202,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "active learning",
-        "constructivism",
-        "inscriptions"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -246,12 +250,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -309,12 +319,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -325,13 +341,8 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "inquiry-based learning",
-        "student-centered learning"
-      ],
-      "cognitive theory": [
-        "dual coding theory"
-      ],
+      "learning theory": [],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -375,12 +386,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -426,7 +443,7 @@
       "static picture"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "classroom"
@@ -440,12 +457,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "culture"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": [
+        "culture"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [
         "matrix"
@@ -506,14 +531,21 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "emotional engagement",
-      "behavioral engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "behavioral engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -525,10 +557,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "hands-on learning",
-        "inquiry-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -575,13 +604,22 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "behavioral engagement"
-    ],
-    "Other tested variables": [
-      "paper/computer"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "behavioral engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "paper vs. computer"
+      ],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "matrix"
@@ -643,12 +681,18 @@
       "teamwork",
       "social resources"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -708,12 +752,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -776,12 +826,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -839,12 +895,18 @@
     "Collaboration": [
       "social resources"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -906,12 +968,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -968,12 +1036,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1032,12 +1106,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1048,13 +1128,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "active learning",
-        "collaborative learning",
-        "constructivism",
-        "student-centered learning",
-        "web-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -1084,7 +1158,7 @@
       "web-based tool"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "classroom"
@@ -1099,13 +1173,23 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "age",
-      "prior knowledge"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "icon vs. no icon"
+      ],
+      "student characteristics": [
+        "age",
+        "prior knowledge"
+      ],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "scatterplot/bubble"
@@ -1116,12 +1200,8 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "multimedia learning"
-      ],
-      "cognitive theory": [
-        "expertise reversal effect"
-      ],
+      "learning theory": [],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -1167,13 +1247,22 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "emotional engagement"
-    ],
-    "Other tested variables": [
-      "3d/2d"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "3d vs. 2d"
+      ],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1230,12 +1319,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "visual-spatial ability"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "spatial ability"
+      ],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1292,13 +1389,22 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "knowledge intergration"
-    ],
-    "Other tested variables": [
-      "drawing",
-      "prior knowledge"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "knowledge intergration"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "prior knowledge"
+      ],
+      "teaching strategies": [
+        "drawing activity"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1309,11 +1415,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "Active–Constructive–Interactive framework",
-        "inquiry-based learning",
-        "knowledge integration framework"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -1358,12 +1460,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "knowledge intergration"
-    ],
-    "Other tested variables": [
-      "dynamic/static"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "knowledge intergration"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "static vs. dynamic"
+      ],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "pictogram"
@@ -1374,14 +1484,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "inquiry-based learning",
-        "knowledge integration framework"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "partnership design"
-      ]
+      "design theory": []
     }
   },
   {
@@ -1424,12 +1529,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -1488,14 +1599,21 @@
       "teamwork",
       "social resources"
     ],
-    "Evaluation metrics": [
-      "interest/motivation",
-      "awareness",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "interest/motivation",
+        "awareness"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -1553,12 +1671,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "knowledge intergration"
-    ],
-    "Other tested variables": [
-      "critique"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "knowledge intergration"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": [
+        "critique strategy"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1569,13 +1695,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "constructivism",
-        "hands-on learning",
-        "inquiry-based learning",
-        "knowledge integration framework",
-        "scaffolding"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -1623,12 +1743,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1639,11 +1765,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "computer-based learning",
-        "hands-on learning",
-        "inquiry-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -1654,7 +1776,7 @@
     "Authors": "Kennedy, J, Abichandani, P, Fontecchio, A",
     "Year": 2014,
     "Link": "https://ieeexplore.ieee.org/iel7/7017968/7043978/07044488.pdf",
-    "Source": "2014 IEEE Frontiers in Education Conference (FIE)",
+    "Source": "2014 IEEE Frontiers in Education Conference FIEE)",
     "Publication type": "C",
     "Research areas": [
       "Education & Educational Research",
@@ -1691,12 +1813,18 @@
       "teamwork",
       "social resources"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line",
@@ -1753,14 +1881,23 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness",
-      "interest/motivation"
-    ],
-    "Other tested variables": [
-      "high-achieving/low-achieving"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge",
+        "interest/motivation"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "high/low-achieving"
+      ],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -1771,10 +1908,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "computer-based learning",
-        "inquiry-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -1820,14 +1954,22 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "emotional engagement",
-      "usability/usefulness",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      "AR/web"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "2d interface vs. AR"
+      ],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -1885,12 +2027,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -1949,12 +2097,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -2015,13 +2169,19 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "knowledge intergration",
-      "memory"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "knowledge intergration",
+        "memory"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -2032,15 +2192,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "inquiry-based learning",
-        "knowledge integration framework",
-        "technology-enhanced learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "partnership design"
-      ]
+      "design theory": []
     }
   },
   {
@@ -2049,7 +2203,7 @@
     "Authors": "Salinas, P, Quintero, E, Sánchez, X, Hernández, C, Ocampo, H, Silva, G, González, A",
     "Year": 2015,
     "Link": "https://www.researchgate.net/publication/280235778_PROJECT_TEAM_LEADING_AN_INNOVATION_TOWARDS_A_VISUAL_AND_TANGIBLE_MATH",
-    "Source": "EDULEARN15: 7th International Conference on Education and New Learning Technologies",
+    "Source": "Edulearn15: 7th International Conference on Education and New Learning Technologies",
     "Publication type": "C",
     "Research areas": [
       "Education & Educational Research"
@@ -2086,12 +2240,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line",
@@ -2106,10 +2266,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "ecological perspective",
-        "social constructivism"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -2140,7 +2297,7 @@
       "static picture"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "classroom"
@@ -2154,14 +2311,22 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "knowledge transfer"
-    ],
-    "Other tested variables": [
-      "cognitive-science-based intervention",
-      "curricula",
-      "underrepresented minority status of the classrooms"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "knowledge transfer"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": [
+        "curriculum/subject",
+        "underrepresented minority status of the classrooms",
+        "cognitive-science-based intervention"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -2220,13 +2385,19 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness",
-      "behavioral engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "behavioral engagement",
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -2237,14 +2408,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "microcomputer-based laboratories",
-        "scaffolding"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "design-based research"
-      ]
+      "design theory": []
     }
   },
   {
@@ -2287,12 +2453,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -2316,7 +2488,7 @@
     "Authors": "Osmakcic, K, Kocijan, K",
     "Year": 2017,
     "Link": "https://ieeexplore.ieee.org/document/7973532",
-    "Source": "2017 40th International Convention on Information and Communication Technology, Electronics and Microelectronics MIPROO)",
+    "Source": "2017 40th International Convention on Information and Communication Technology, Electronics and Microelectronics Miproo)",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -2351,14 +2523,24 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      "gender",
-      "school (technical/non-technical)"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "gender"
+      ],
+      "teaching strategies": [
+        "school"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -2380,7 +2562,7 @@
     "Authors": "Rofiuddin, MR, Feranie, S",
     "Year": 2017,
     "Link": "http://doi.org/10.1063/1.4983979",
-    "Source": "Mathematics, Science, and Computer Science Education (MSCEIS 2016)",
+    "Source": "Mathematics, Science, and Computer Science Education MSCEISS 2016)",
     "Publication type": "C",
     "Research areas": [
       "Education & Educational Research",
@@ -2414,14 +2596,21 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "conceptual change",
-      "emotional engagement",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "conceptual change"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -2432,10 +2621,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "constructivism",
-        "five-stage conceptual teaching model"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -2479,15 +2665,22 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness",
-      "emotional engagement",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -2530,7 +2723,7 @@
       "video/animation"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "classroom"
@@ -2544,12 +2737,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "dynamic/static"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "static vs. dynamic"
+      ],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -2571,7 +2772,7 @@
     "Authors": "Srikant, S, Aggarwal, V",
     "Year": 2017,
     "Link": "http://doi.org/10.1145/3017680.3017717",
-    "Source": "Proceedings of the 2017 ACM SIGCSE Technical Symposium on Computer Science Education (SIGCSE'17)",
+    "Source": "Proceedings of the 2017 ACM SIGCSE Technical Symposium on Computer Science Education Sigcse'177)",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -2592,7 +2793,7 @@
       "static picture"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "out-of-school"
@@ -2607,15 +2808,22 @@
     "Collaboration": [
       "social resources"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "emotional engagement",
-      "usability/usefulness",
-      "behavioral engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "behavioral engagement",
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "bar",
@@ -2627,13 +2835,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "apprenticeship",
-        "blended learning",
-        "collaborative learning",
-        "experiential learning",
-        "problem-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -2677,14 +2879,23 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "metacognitive scaffolding strategy",
-      "prior knowledge",
-      "prompting application - whether actually apply the prompts"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "prior knowledge",
+        "prompting application"
+      ],
+      "teaching strategies": [
+        "metacognitive scaffolding strategy"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [
         "line",
@@ -2697,13 +2908,8 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "scaffolding",
-        "simulation-based learning"
-      ],
-      "cognitive theory": [
-        "metacognition"
-      ],
+      "learning theory": [],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -2749,13 +2955,19 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "emotional engagement",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -2766,10 +2978,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "collaborative learning",
-        "hands-on learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -2780,7 +2989,7 @@
     "Authors": "Akbar, M, Dura, L, Gates, AQ, Ortega, A, Roy, MK, Santiago, C, Tellez, JG, Villa, E",
     "Year": 2018,
     "Link": "https://doi.org/10.1109/FIE.2018.8659071",
-    "Source": "2018 IEEE Frontiers in Education Conference (FIE)",
+    "Source": "2018 IEEE Frontiers in Education Conference FIEE)",
     "Publication type": "C",
     "Research areas": [
       "Education & Educational Research",
@@ -2815,13 +3024,19 @@
     "Collaboration": [
       "social resources"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "usability/usefulness",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "pictogram",
@@ -2833,11 +3048,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "gamification",
-        "inquiry-based learning",
-        "social constructivism"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -2848,7 +3059,7 @@
     "Authors": "Dryer, A, Walia, N, Chattopadhyay, A",
     "Year": 2018,
     "Link": "http://doi.org/10.1145/3159450.3159553",
-    "Source": "SIGCSE'18: Proceedings of the 49th ACM Technical Symposium on Computer Science Education",
+    "Source": "Sigcse'18: Proceedings of the 49th ACM Technical Symposium on Computer Science Education",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -2882,13 +3093,20 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -2943,13 +3161,22 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      "dynamic 3d/static 2d"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "3d vs. 2d"
+      ],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -2973,7 +3200,7 @@
     "Authors": "Knierim, P, Kiss, F, Schmidt, A",
     "Year": 2018,
     "Link": "http://doi.org/10.1109/ISMARAdjunct.2018.00059",
-    "Source": "Adjunct Proceedings of the 2018 IEEE International Symposium on Mixed and Augmented Reality IsmarR)",
+    "Source": "Adjunct Proceedings of the 2018 IEEE International Symposium on Mixed and Augmented Reality Ismarr)",
     "Publication type": "C",
     "Research areas": [
       "Computer Science"
@@ -3006,12 +3233,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -3067,13 +3300,20 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -3097,7 +3337,7 @@
     "Authors": "SanchoChavarría, L, MataMontero, E",
     "Year": 2018,
     "Link": "https://ieeexplore.ieee.org/abstract/document/8596366/",
-    "Source": "2018 IEEE 38th Central America and Panama Convention (CONCAPAN XXXVIII)",
+    "Source": "2018 IEEE 38th Central America and Panama Convention ConcapanN Xxxviii)",
     "Publication type": "C",
     "Research areas": [
       "Engineering"
@@ -3131,12 +3371,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -3158,7 +3404,7 @@
     "Authors": "Setiawan, A, Rostianingsih, S, Widodo, TR",
     "Year": 2018,
     "Link": "http://doi.org/10.1051/matecconf/201824805007",
-    "Source": "4th Engineering Science and Technology International Conference (ESTIC 2018)",
+    "Source": "4th Engineering Science and Technology International Conference EsticC 2018)",
     "Publication type": "C",
     "Research areas": [
       "Engineering"
@@ -3191,12 +3437,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -3237,7 +3489,7 @@
       "static picture"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "classroom"
@@ -3251,12 +3503,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -3267,13 +3525,8 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "Evidence-based Reasoning (EBR)",
-        "Four-step Strategy (FOPS)"
-      ],
-      "cognitive theory": [
-        "metacognition"
-      ],
+      "learning theory": [],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -3283,7 +3536,7 @@
     "Authors": "Zinkus, M, Curry, O, Moore, M, Peterson, Z, Wood, ZJ",
     "Year": 2019,
     "Link": "http://doi.org/10.1145/3287324.3287486",
-    "Source": "SIGCSE'19: Proceedings of the 50th ACM Technical Symposium on Computer Science Education",
+    "Source": "Sigcse'19: Proceedings of the 50th ACM Technical Symposium on Computer Science Education",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -3317,14 +3570,21 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -3346,7 +3606,7 @@
     "Authors": "Herold, PC, Dasgupta, C, Murthy, S, Joshi, A",
     "Year": 2019,
     "Link": "http://doi.org/10.1109/ICALT.2019.00091",
-    "Source": "2019 IEEE 19th International Conference on Advanced Learning Technologies (ICALT 2019)",
+    "Source": "2019 IEEE 19th International Conference on Advanced Learning Technologies IcaltT 2019)",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -3380,12 +3640,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "individual difference"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "pictogram"
@@ -3446,12 +3712,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -3473,7 +3745,7 @@
     "Authors": "Wahab, NA, Sulaiman, H",
     "Year": 2019,
     "Link": "http://doi.org/10.1063/1.5136369",
-    "Source": "Proceedings of the International Conference on Mathematical Sciences and Technology 2018 (MATHTECH 2018): Innovative Technologies for Mathematics & Mathematics for Technological Innovation",
+    "Source": "Proceedings of the International Conference on Mathematical Sciences and Technology 2018 MathtechH 2018): Innovative Technologies for Mathematics & Mathematics for Technological Innovation",
     "Publication type": "C",
     "Research areas": [
       "Mathematics"
@@ -3506,16 +3778,23 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "emotional engagement",
-      "confidence/selfefficacy",
-      "usability/usefulness",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness",
+        "cognitive engagement",
+        "confidence/selfefficacy"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "bar",
@@ -3575,14 +3854,21 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "emotional engagement",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -3593,14 +3879,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "scaffolding",
-        "theory of culturally relevant education"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "design-based research"
-      ]
+      "design theory": []
     }
   },
   {
@@ -3609,7 +3890,7 @@
     "Authors": "Suzianti, A, Mubarak, A, Edrisy, F, Sausan, AR, Lalita, CN, Usman, X",
     "Year": 2019,
     "Link": "http://doi.org/10.1088/1757899X/692/1/012046",
-    "Source": "2019 5th International Conference on Mechanical Engineering and Automation Science (ICMEAS 2019)",
+    "Source": "2019 5th International Conference on Mechanical Engineering and Automation Science IcmeasS 2019)",
     "Publication type": "C",
     "Research areas": [
       "Automation & Control Systems",
@@ -3644,12 +3925,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -3708,12 +3995,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "bar"
@@ -3738,7 +4031,7 @@
     "Authors": "Liu, QT, Xu, SX, Yu, SF, Yang, YY, Wu, LJ, Ba, S",
     "Year": 2019,
     "Link": "http://doi.org/10.1109/ISET.2019.00036",
-    "Source": "2019 International Symposium on Educational Technology (ISET 2019)",
+    "Source": "2019 International Symposium on Educational Technology ISETT 2019)",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -3774,12 +4067,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "pictogram"
@@ -3836,13 +4135,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "diverging thinking/creativity",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "diverging thinking/creativity"
+      ],
+      "User experience": [
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -3864,7 +4170,7 @@
     "Authors": "Skrabánková, J, Kocí, P, Vanek, V, Nocar, D",
     "Year": 2019,
     "Link": "https://www.researchgate.net/publication/337261339_DIFFERENCES_IN_ATTITUDES_TO_SOLVING_TASK_BY_GIFTED_AND_STANDARD_STUDENTS_MONITORED_BY_THE_EYE_TRACKING_TECHNOLOGY_PILOT_STUDY",
-    "Source": "12th International Conference of Education, Research and Innovation (ICERI2019)",
+    "Source": "12th International Conference of Education, Research and Innovation Iceri20199)",
     "Publication type": "C",
     "Research areas": [
       "Education & Educational Research"
@@ -3898,12 +4204,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "gaze point"
-    ],
-    "Other tested variables": [
-      "gifted/standard"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "gaze point"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "gifted"
+      ],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -3962,14 +4276,21 @@
       "teamwork",
       "social resources"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "social engagement",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "cognitive engagement",
+        "social engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -4014,7 +4335,7 @@
       "software/app"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "not sure"
@@ -4028,12 +4349,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -4090,12 +4417,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -4153,12 +4486,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "spatial ability"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "spatial ability"
+      ],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -4202,7 +4543,7 @@
       "static picture"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "classroom"
@@ -4216,12 +4557,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -4278,12 +4625,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -4343,13 +4696,20 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "confidence/selfefficacy"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "confidence/selfefficacy"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line",
@@ -4410,12 +4770,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "stream graph"
@@ -4477,12 +4843,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -4493,10 +4865,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "hands-on learning",
-        "tactile learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -4507,7 +4876,7 @@
     "Authors": "Wan, XY, Zhou, XF, Ye, ZQ, Mortensen, CK, Bai, Z",
     "Year": 2020,
     "Link": "http://doi.org/10.1145/3392063.3394440",
-    "Source": "Proceedings of IDC 2020",
+    "Source": "Proceedings of Idc 2020",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -4544,12 +4913,18 @@
       "teamwork",
       "social resources"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "pictogram"
@@ -4560,14 +4935,8 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "collaborative learning",
-        "constructivism",
-        "hands-on learning"
-      ],
-      "cognitive theory": [
-        "distributed cognition theory"
-      ],
+      "learning theory": [],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -4611,12 +4980,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -4627,10 +5002,7 @@
       ]
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "collaborative learning",
-        "project-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -4678,17 +5050,27 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "speed",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      "school",
-      "gender",
-      "age",
-      "majors"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge",
+        "speed"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "age",
+        "gender"
+      ],
+      "teaching strategies": [
+        "curriculum/subject",
+        "school"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -4745,12 +5127,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -4761,10 +5149,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "collaborative learning",
-        "hands-on learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -4809,13 +5194,22 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      "perceived difficulty of the taught content"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": [
+        "difficulty of the taught content"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -4874,14 +5268,23 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "memory",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      "view/view+draw/view+animation"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge",
+        "memory"
+      ],
+      "User experience": [
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": [
+        "drawing activity"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -4892,11 +5295,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "constructivism",
-        "model-based learning",
-        "VGEM sequence"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -4944,12 +5343,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "scatterplot/bubble"
@@ -5008,12 +5413,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -5024,13 +5435,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "immersive learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "design science research (DSR) framework"
-      ]
+      "design theory": []
     }
   },
   {
@@ -5073,14 +5480,20 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness",
-      "emotional engagement",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -5138,12 +5551,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line",
@@ -5202,12 +5621,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -5264,13 +5689,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -5327,15 +5759,25 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      "age",
-      "discipline/subject",
-      "teacher personality"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "age"
+      ],
+      "teaching strategies": [
+        "curriculum/subject",
+        "teacher personality"
+      ]
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -5394,12 +5836,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -5421,7 +5869,7 @@
     "Authors": "Lindenau, P, Schwerdt, C, Walter, M",
     "Year": 2022,
     "Link": "https://inspirehep.net/literature/1936858",
-    "Source": "37th International Cosmic Ray Conference, ICRC2021",
+    "Source": "37th International Cosmic Ray Conference, Icrc2021",
     "Publication type": "C",
     "Research areas": [
       "Astronomy & Astrophysics",
@@ -5455,13 +5903,19 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "emotional engagement",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "emotional engagement",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -5485,7 +5939,7 @@
     "Authors": "Murseli, E, Mandic, L, Pibernik, J, Srdic, I",
     "Year": 2022,
     "Link": "http://doi.org/10.1109/ELMAR55880.2022.9899791",
-    "Source": "Proceedings of 2022 64th International Symposium ELMAR2022",
+    "Source": "Proceedings of 2022 64th International Symposium Elmar2022",
     "Publication type": "C",
     "Research areas": [
       "Engineering",
@@ -5519,12 +5973,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -5565,7 +6025,7 @@
       "static picture"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "not sure"
@@ -5579,12 +6039,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -5640,13 +6106,20 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -5701,12 +6174,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -5717,10 +6196,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "constructivism",
-        "inquiry-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -5765,12 +6241,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "memory"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "memory"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -5794,7 +6276,7 @@
     "Authors": "Tsai, PS",
     "Year": 2023,
     "Link": "https://library.apsce.net/index.php/ICCE/article/view/1029",
-    "Source": "31st International Conference on Computers in Education, ICCE 2023, Vol I",
+    "Source": "31st International Conference on Computers in Education, Icce 2023, Vol I",
     "Publication type": "C",
     "Research areas": [
       "Computer Science",
@@ -5828,12 +6310,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -5888,12 +6376,20 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      "reasoning quality"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "reasoning quality"
+      ],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -5906,10 +6402,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "Evidence-based Reasoning (EBR)",
-        "Predict-Observe-Explain (POE) instructional strategy"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -5954,12 +6447,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -5970,10 +6469,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "inquiry-based learning",
-        "technology-enhanced learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -6016,14 +6512,22 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "emotional engagement",
-      "behavioral engagement",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      "paper/2d/vr"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "emotional engagement",
+        "behavioral engagement",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [
+        "paper vs. 2d vs. VR"
+      ],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -6080,13 +6584,20 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -6143,14 +6654,21 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "emotional engagement",
-      "understanding/acquisition of knowledge",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "cognitive engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "bar",
@@ -6209,14 +6727,21 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "emotional engagement",
-      "usability/usefulness"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -6227,11 +6752,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "collaborative learning",
-        "computer-based learning",
-        "inquiry-based learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -6275,12 +6796,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "pictogram"
@@ -6339,12 +6866,18 @@
     "Collaboration": [
       "social resources"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "scatterplot/bubble"
@@ -6357,13 +6890,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "epistemic data agency"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "design-based research"
-      ]
+      "design theory": []
     }
   },
   {
@@ -6405,12 +6934,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -6421,13 +6956,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "active learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "ADDIE"
-      ]
+      "design theory": []
     }
   },
   {
@@ -6469,17 +7000,24 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "emotional engagement",
-      "behavioral engagement",
-      "cognitive engagement",
-      "social engagement",
-      "confidence/selfefficacy"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "emotional engagement",
+        "behavioral engagement",
+        "cognitive engagement",
+        "confidence/selfefficacy",
+        "social engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -6535,15 +7073,24 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "computational thinking",
-      "confidence/selfefficacy",
-      "cognitive engagement"
-    ],
-    "Other tested variables": [
-      "gender identity",
-      "race/ethnicity"
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "computational thinking"
+      ],
+      "User experience": [
+        "cognitive engagement",
+        "confidence/selfefficacy"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [
+        "gender",
+        "race/ethnicity"
+      ],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -6554,11 +7101,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "multimodal learning",
-        "problem-based learning",
-        "situative learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -6603,12 +7146,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -6666,13 +7215,20 @@
       "teamwork",
       "social resources"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge",
-      "behavioral engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": [
+        "behavioral engagement"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -6685,15 +7241,9 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "model-based learning",
-        "socioscientific issue (SSI)",
-        "technology-enhanced learning"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
-      "design theory": [
-        "design-based research"
-      ]
+      "design theory": []
     }
   },
   {
@@ -6737,12 +7287,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [
@@ -6800,12 +7356,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line",
@@ -6818,12 +7380,7 @@
     },
     "Theoretical underpinnings": {
       "learning theory": [],
-      "cognitive theory": [
-        "cognitive model of drawing construction (CMDC)",
-        "metacognition",
-        "metarepresentational competence",
-        "metavisualization"
-      ],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -6866,12 +7423,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -6914,7 +7477,7 @@
       "static picture"
     ],
     "Tool types": [
-      
+      "nan"
     ],
     "Teaching environment": [
       "classroom"
@@ -6929,12 +7492,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [],
       "scientific visualization": [],
@@ -6945,14 +7514,8 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "constructivism",
-        "gamification",
-        "social constructivism"
-      ],
-      "cognitive theory": [
-        "cognitivism"
-      ],
+      "learning theory": [],
+      "cognitive theory": [],
       "design theory": []
     }
   },
@@ -6996,12 +7559,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "line"
@@ -7058,13 +7627,19 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "usability/usefulness",
-      "emotional engagement"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [],
+      "User experience": [
+        "emotional engagement",
+        "usability/usefulness"
+      ]
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "histogram"
@@ -7121,12 +7696,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "no formal evaluation"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [
+        "no formal evaluation"
+      ],
+      "Learning performance": [],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "bar"
@@ -7139,10 +7720,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "hands-on learning",
-        "minimal laboratory"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }
@@ -7186,12 +7764,18 @@
     "Collaboration": [
       "no/don't know"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "histogram"
@@ -7250,12 +7834,18 @@
     "Collaboration": [
       "teamwork"
     ],
-    "Evaluation metrics": [
-      "understanding/acquisition of knowledge"
-    ],
-    "Other tested variables": [
-      
-    ],
+    "Evaluation metrics": {
+      "no": [],
+      "Learning performance": [
+        "understanding/acquisition of knowledge"
+      ],
+      "User experience": []
+    },
+    "Other tested variables": {
+      "visualization designs": [],
+      "student characteristics": [],
+      "teaching strategies": []
+    },
     "Visualization types": {
       "statistical chart": [
         "scatterplot/bubble"
@@ -7268,11 +7858,7 @@
       "network/graph": []
     },
     "Theoretical underpinnings": {
-      "learning theory": [
-        "constructivism",
-        "socioscientific issue (SSI)",
-        "theory of mediated action"
-      ],
+      "learning theory": [],
       "cognitive theory": [],
       "design theory": []
     }

@@ -303,6 +303,16 @@ export default {
           'learning theory': { start: 0, end: 47 },       // Columns 1-48
           'cognitive theory': { start: 48, end: 56 },     // Columns 49-57
           'design theory': { start: 57, end: 62 }         // Columns 58-63
+        },
+        'Evaluation metrics': {
+          'no': { start: 0, end: 0 },   // Columns 1
+          'Learning performance': { start: 1, end: 11 },  // Columns 2-12
+          'User experience': { start: 12, end: 17 }       // Columns 13-18
+        },
+        'Other tested variables': {
+          'visualization designs': { start: 0, end: 5 },  // Columns 1-6
+          'student characteristics': { start: 6, end: 14 }, // Columns 7-15
+          'teaching strategies': { start: 15, end: 24 }   // Columns 16-25
         }
       },
       // Fixed category options
@@ -336,14 +346,20 @@ export default {
       return this.currentMatrix.x_category === 'Visualization types' || 
              this.currentMatrix.y_category === 'Visualization types' ||
              this.currentMatrix.x_category === 'Theoretical underpinnings' || 
-             this.currentMatrix.y_category === 'Theoretical underpinnings';
+             this.currentMatrix.y_category === 'Theoretical underpinnings' ||
+             this.currentMatrix.x_category === 'Evaluation metrics' ||
+             this.currentMatrix.y_category === 'Evaluation metrics' ||
+             this.currentMatrix.x_category === 'Other tested variables' ||
+             this.currentMatrix.y_category === 'Other tested variables';
     },
     
     // Check if secondary header is displayed on X-axis
     isSecondaryHeaderOnXAxis() {
       if (!this.currentMatrix) return false;
       return this.currentMatrix.y_category === 'Visualization types' || 
-             this.currentMatrix.y_category === 'Theoretical underpinnings';
+             this.currentMatrix.y_category === 'Theoretical underpinnings' ||
+             this.currentMatrix.y_category === 'Evaluation metrics' ||
+             this.currentMatrix.y_category === 'Other tested variables';
     },
     
     // Get secondary header data
@@ -354,7 +370,10 @@ export default {
       }
       
       // Check if X-axis or Y-axis needs secondary header
-      const isXAxis = this.currentMatrix.y_category === 'Visualization types' || this.currentMatrix.y_category === 'Theoretical underpinnings';
+      const isXAxis = this.currentMatrix.y_category === 'Visualization types' ||
+        this.currentMatrix.y_category === 'Theoretical underpinnings' ||
+        this.currentMatrix.y_category === 'Evaluation metrics' ||
+        this.currentMatrix.y_category === 'Other tested variables';
       const category = isXAxis ? this.currentMatrix.y_category : this.currentMatrix.x_category;
       
       console.log('Category for secondary header:', category);

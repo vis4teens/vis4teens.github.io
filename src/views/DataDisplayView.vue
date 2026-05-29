@@ -364,15 +364,20 @@
               <button @click="removeFilter('selectedEvaluationMetrics', metric)" class="remove-tag">×</button>
             </span>
           </div>
-          <div class="checkbox-group" v-show="expandedSections.evaluationMetrics">
-            <label v-for="metric in evaluationMetrics" :key="metric" class="checkbox-label">
-              <input 
-                type="checkbox" 
-                :value="metric" 
-                v-model="selectedEvaluationMetrics"
-              />
-              <span class="checkbox-text">{{ metric }} ({{ evaluationMetricsCounts[metric] || 0 }})</span>
-            </label>
+          <div class="nested-checkbox-group" v-show="expandedSections.evaluationMetrics">
+            <div v-for="(metrics, category) in evaluationMetricsCategories" :key="category" class="nested-category">
+              <h5 class="category-title">{{ formatEvaluationCategory(category) }}</h5>
+              <div class="checkbox-subgroup">
+                <label v-for="metric in metrics" :key="metric" class="checkbox-label">
+                  <input 
+                    type="checkbox" 
+                    :value="metric" 
+                    v-model="selectedEvaluationMetrics"
+                  />
+                  <span class="checkbox-text">{{ metric }} ({{ (evaluationMetricsCategoryCounts[category] && evaluationMetricsCategoryCounts[category][metric]) || 0 }})</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -388,15 +393,20 @@
               <button @click="removeFilter('selectedOtherTestedVariables', variable)" class="remove-tag">×</button>
             </span>
           </div>
-          <div class="checkbox-group" v-show="expandedSections.otherTestedVariables">
-            <label v-for="variable in otherTestedVariables" :key="variable" class="checkbox-label">
-              <input 
-                type="checkbox" 
-                :value="variable" 
-                v-model="selectedOtherTestedVariables"
-              />
-              <span class="checkbox-text">{{ variable }} ({{ otherTestedVariablesCounts[variable] || 0 }})</span>
-            </label>
+          <div class="nested-checkbox-group" v-show="expandedSections.otherTestedVariables">
+            <div v-for="(variables, category) in otherTestedVariablesCategories" :key="category" class="nested-category">
+              <h5 class="category-title">{{ category }}</h5>
+              <div class="checkbox-subgroup">
+                <label v-for="variable in variables" :key="variable" class="checkbox-label">
+                  <input 
+                    type="checkbox" 
+                    :value="variable" 
+                    v-model="selectedOtherTestedVariables"
+                  />
+                  <span class="checkbox-text">{{ variable }} ({{ (otherTestedVariablesCategoryCounts[category] && otherTestedVariablesCategoryCounts[category][variable]) || 0 }})</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -649,6 +659,8 @@
 </template>
 
 <script>
+import columnMapping from '@/assets/data/column_mapping2.json';
+
 export default {
   name: 'DataDisplayView',
   data() {
@@ -697,8 +709,12 @@ export default {
       collaborationCounts: {},
       evaluationMetrics: [],
       evaluationMetricsCounts: {},
+      evaluationMetricsCategories: {},
+      evaluationMetricsCategoryCounts: {},
       otherTestedVariables: [],
       otherTestedVariablesCounts: {},
+      otherTestedVariablesCategories: {},
+      otherTestedVariablesCategoryCounts: {},
       visualizationTypesCategories: {},
       visualizationTypesCounts: {},
       theoreticalUnderpinningsCategories: {},
@@ -967,12 +983,37 @@ export default {
       const collaborationCounts = {};
       const evaluationMetricsCounts = {};
       const otherTestedVariablesCounts = {};
+      const evaluationMetricsCategoryCounts = {};
+      const otherTestedVariablesCategoryCounts = {};
       
       // Objects for storing sub-categories
       const visualizationTypesMap = {};
       const theoreticalUnderpinningsMap = {};
       const visualizationTypesCounts = {};
       const theoreticalUnderpinningsCounts = {};
+
+      const evaluationMetricsCategories = {};
+      const otherTestedVariablesCategories = {};
+      const evaluationMetricToCategory = new Map();
+      const otherTestedVariableToCategory = new Map();
+
+      const evaluationMapping = columnMapping['Evaluation metrics'] || {};
+      Object.keys(evaluationMapping).forEach(category => {
+        evaluationMetricsCategories[category] = [...evaluationMapping[category]];
+        evaluationMetricsCategoryCounts[category] = {};
+        evaluationMapping[category].forEach(metric => {
+          evaluationMetricToCategory.set(metric, category);
+        });
+      });
+
+      const otherTestedMapping = columnMapping['Other tested variables'] || {};
+      Object.keys(otherTestedMapping).forEach(category => {
+        otherTestedVariablesCategories[category] = [...otherTestedMapping[category]];
+        otherTestedVariablesCategoryCounts[category] = {};
+        otherTestedMapping[category].forEach(variable => {
+          otherTestedVariableToCategory.set(variable, category);
+        });
+      });
 
       const incrementCount = (map, key) => {
         map[key] = (map[key] || 0) + 1;
@@ -1043,6 +1084,12 @@ export default {
         if (project['Evaluation metrics']) {
           project['Evaluation metrics'].forEach(metric => evaluationMetricsSet.add(metric));
           project['Evaluation metrics'].forEach(metric => incrementCount(evaluationMetricsCounts, metric));
+          project['Evaluation metrics'].forEach(metric => {
+            const category = evaluationMetricToCategory.get(metric);
+            if (category) {
+              incrementCount(evaluationMetricsCategoryCounts[category], metric);
+            }
+          });
         }
         
         // 其他测试变量
@@ -1051,6 +1098,10 @@ export default {
             if (variable && variable.trim()) { // 过滤空值
               otherTestedVariablesSet.add(variable);
               incrementCount(otherTestedVariablesCounts, variable);
+              const category = otherTestedVariableToCategory.get(variable);
+              if (category) {
+                incrementCount(otherTestedVariablesCategoryCounts[category], variable);
+              }
             }
           });
         }
@@ -1117,6 +1168,9 @@ export default {
       this.collaboration = sortByCountThenName(Array.from(collaborationSet), collaborationCounts);
       this.evaluationMetrics = sortByCountThenName(Array.from(evaluationMetricsSet), evaluationMetricsCounts);
       this.otherTestedVariables = sortByCountThenName(Array.from(otherTestedVariablesSet), otherTestedVariablesCounts);
+
+      this.evaluationMetricsCategories = evaluationMetricsCategories;
+      this.otherTestedVariablesCategories = otherTestedVariablesCategories;
       
       // 转换二级分类为排序对象
       this.visualizationTypesCategories = {};
@@ -1135,6 +1189,20 @@ export default {
         );
       });
 
+      Object.keys(evaluationMetricsCategories).forEach(category => {
+        evaluationMetricsCategories[category] = sortByCountThenName(
+          Array.from(evaluationMetricsCategories[category]),
+          evaluationMetricsCategoryCounts[category]
+        );
+      });
+
+      Object.keys(otherTestedVariablesCategories).forEach(category => {
+        otherTestedVariablesCategories[category] = sortByCountThenName(
+          Array.from(otherTestedVariablesCategories[category]),
+          otherTestedVariablesCategoryCounts[category]
+        );
+      });
+
       this.researchAreasCounts = researchAreasCounts;
       this.subjectsCounts = subjectsCounts;
       this.countriesCounts = countriesCounts;
@@ -1147,6 +1215,8 @@ export default {
       this.collaborationCounts = collaborationCounts;
       this.evaluationMetricsCounts = evaluationMetricsCounts;
       this.otherTestedVariablesCounts = otherTestedVariablesCounts;
+      this.evaluationMetricsCategoryCounts = evaluationMetricsCategoryCounts;
+      this.otherTestedVariablesCategoryCounts = otherTestedVariablesCategoryCounts;
       this.visualizationTypesCounts = visualizationTypesCounts;
       this.theoreticalUnderpinningsCounts = theoreticalUnderpinningsCounts;
     },
@@ -1168,6 +1238,11 @@ export default {
       this.selectedOtherTestedVariables = [];
       this.selectedVisualizationTypes = [];
       this.selectedTheoreticalUnderpinnings = [];
+    },
+
+    formatEvaluationCategory(category) {
+      if (category === 'no formal evaluation') return 'no';
+      return category;
     },
     
     // 新增方法
